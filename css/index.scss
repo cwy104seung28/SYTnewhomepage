@@ -427,7 +427,9 @@ body {
                             &:hover {
                                 width: 150px;
                                 @media (max-width:767px) {
-                                    width: 130px;
+                                    width: 50px;
+                                    background-color: #000000;
+                                    color: #ffd30f;
                                 }
                             }
 
@@ -467,14 +469,25 @@ body {
                                 &:hover{
                                     width: 180px;
                                     @media (max-width:767px) {
-                                        width: 150px;
+                                        width: 50px;
                                     }
                                 }
                         }
                         .line-icon{
                             padding: 0px 2.5px;
+                            .line-img-hover{
+                                display: none;
+                            }
                             @media (max-width:767px) {
                                 padding: 0px 1px;
+                                &:hover{
+                                    .line-img{
+                                        display: none;
+                                    }
+                                    .line-img-hover{
+                                        display: block;
+                                    }
+                                }
                             }
                         }
                     }

@@ -469,7 +469,9 @@ body main.syt-main .contact-service .service-icon .service-icon-ul .service-icon
 
 @media (max-width: 767px) {
   body main.syt-main .contact-service .service-icon .service-icon-ul .service-icon-li a:hover {
-    width: 130px;
+    width: 50px;
+    background-color: #000000;
+    color: #ffd30f;
   }
 }
 
@@ -519,7 +521,7 @@ body main.syt-main .contact-service .service-icon .service-icon-ul .service-icon
 
 @media (max-width: 767px) {
   body main.syt-main .contact-service .service-icon .service-icon-ul .service-icon-li .chat-icon:hover, body main.syt-main .contact-service .service-icon .service-icon-ul .service-icon-li .contact-icon:hover {
-    width: 150px;
+    width: 50px;
   }
 }
 
@@ -527,9 +529,19 @@ body main.syt-main .contact-service .service-icon .service-icon-ul .service-icon
   padding: 0px 2.5px;
 }
 
+body main.syt-main .contact-service .service-icon .service-icon-ul .service-icon-li .line-icon .line-img-hover {
+  display: none;
+}
+
 @media (max-width: 767px) {
   body main.syt-main .contact-service .service-icon .service-icon-ul .service-icon-li .line-icon {
     padding: 0px 1px;
+  }
+  body main.syt-main .contact-service .service-icon .service-icon-ul .service-icon-li .line-icon:hover .line-img {
+    display: none;
+  }
+  body main.syt-main .contact-service .service-icon .service-icon-ul .service-icon-li .line-icon:hover .line-img-hover {
+    display: block;
   }
 }
 
