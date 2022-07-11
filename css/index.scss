@@ -374,9 +374,9 @@ body {
                 text-align: center;
                 border-radius: 50%;
                 @media (max-width:767px) {
-                    width: 40px;
-                    height: 40px;
-                    font-size: 16px;
+                    width: 50px;
+                    height: 50px;
+                    font-size: 24px;
                 }
             }
     
@@ -389,7 +389,7 @@ body {
                     bottom: 45px;
                     right: 0px;
                     @media (max-width:767px) {
-                        bottom: 25px;
+                        bottom: 35px;
                     }
                     .service-icon-li {
                         a{
@@ -404,17 +404,17 @@ body {
                             margin-bottom: 10px;
                             padding-top: 12px;
                             @media (max-width:767px) {
-                                width: 40px;
-                                height: 40px;
-                                font-size: 20px;
-                                padding-top: 7px;
+                                width: 50px;
+                                height: 50px;
+                                font-size: 24px;
+                                padding-top: 10px;
                             }
                             img{
                                 width: 35px;
                                 height: 35px;
                                 @media (max-width:767px) {
-                                    width: 20px;
-                                    height: 20px;
+                                    width: 28px;
+                                    height: 28px;
                                 }
                             }
                         }
