@@ -468,18 +468,24 @@ body main.syt-main .contact-service .service-icon .service-icon-ul .service-icon
 }
 
 @media (max-width: 767px) {
+  body main.syt-main .contact-service .service-icon .service-icon-ul .service-icon-li a:hover {
+    width: 130px;
+  }
+}
+
+@media (max-width: 767px) {
   body main.syt-main .contact-service .service-icon .service-icon-ul .service-icon-li a {
     width: 50px;
     height: 50px;
     font-size: 24px;
-    padding-top: 10px;
+    padding: 0px 2.5px;
   }
 }
 
 body main.syt-main .contact-service .service-icon .service-icon-ul .service-icon-li a img {
   width: 35px;
   height: 35px;
-  margin-left: 12.5px;
+  margin-left: 10px;
   margin-right: 10px;
 }
 
@@ -491,7 +497,7 @@ body main.syt-main .contact-service .service-icon .service-icon-ul .service-icon
 }
 
 body main.syt-main .contact-service .service-icon .service-icon-ul .service-icon-li a i {
-  margin-left: 15px;
+  margin-left: 10px;
   margin-right: 10px;
 }
 
@@ -501,12 +507,30 @@ body main.syt-main .contact-service .service-icon .service-icon-ul .service-icon
   margin-right: 10px;
 }
 
+@media (max-width: 767px) {
+  body main.syt-main .contact-service .service-icon .service-icon-ul .service-icon-li a .icon-title {
+    font-size: 16px;
+  }
+}
+
 body main.syt-main .contact-service .service-icon .service-icon-ul .service-icon-li .chat-icon:hover, body main.syt-main .contact-service .service-icon .service-icon-ul .service-icon-li .contact-icon:hover {
   width: 180px;
 }
 
+@media (max-width: 767px) {
+  body main.syt-main .contact-service .service-icon .service-icon-ul .service-icon-li .chat-icon:hover, body main.syt-main .contact-service .service-icon .service-icon-ul .service-icon-li .contact-icon:hover {
+    width: 150px;
+  }
+}
+
 body main.syt-main .contact-service .service-icon .service-icon-ul .service-icon-li .line-icon {
-  padding-right: 2.5px;
+  padding: 0px 2.5px;
+}
+
+@media (max-width: 767px) {
+  body main.syt-main .contact-service .service-icon .service-icon-ul .service-icon-li .line-icon {
+    padding: 0px 1px;
+  }
 }
 
 body .change-nav {
