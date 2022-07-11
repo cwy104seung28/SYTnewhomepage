@@ -360,27 +360,31 @@ body {
                 }
             }
         }
+
         .contact-service {
             position: fixed;
             z-index: 2;
             bottom: 50px;
             right: 20px;
+
             .service-btn {
                 width: 60px;
                 height: 60px;
-                background-color: #10318d;
+                background-color: #e69d00;
                 color: #FFFFFF;
                 font-size: 24px;
                 text-align: center;
                 border-radius: 50%;
+
                 @media (max-width:767px) {
                     width: 50px;
                     height: 50px;
                     font-size: 24px;
                 }
             }
-    
+
             .service-icon {
+
                 // display: none;
                 .service-icon-ul {
                     list-style: none;
@@ -388,147 +392,86 @@ body {
                     z-index: 2;
                     bottom: 45px;
                     right: 0px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-end;
+
                     @media (max-width:767px) {
                         bottom: 35px;
                     }
+
                     .service-icon-li {
-                        a{
-                            display: block;
+                        a {
+                            display: flex;
+                            flex-flow: row-reverse;
+                            align-items: center;
+
                             width: 60px;
                             height: 60px;
-                            background-color: #0488da;
-                            color: #FFFFFF;
+                            padding: 0px 5px;
+
+                            background-color: #ffd30f;
+                            color: #000000;
                             font-size: 30px;
                             text-align: center;
-                            border-radius: 50%;
+
+                            border-radius: 100px;
                             margin-bottom: 10px;
-                            padding-top: 12px;
+
+                            transition: 0.5s ease-in-out;
+
+                            overflow: hidden;
+                            white-space: nowrap;
+
+                            box-shadow: 0px 0px 5px #0000006b;
+                            &:hover {
+                                width: 150px;
+                            }
+
                             @media (max-width:767px) {
                                 width: 50px;
                                 height: 50px;
                                 font-size: 24px;
                                 padding-top: 10px;
                             }
-                            img{
+
+                            img {
                                 width: 35px;
                                 height: 35px;
+                                margin-left: 12.5px;
+                                margin-right: 10px;
+
                                 @media (max-width:767px) {
                                     width: 28px;
                                     height: 28px;
                                 }
                             }
+                            i{
+                                margin-left: 15px;
+                                margin-right: 10px;
+                            }
+
+                            .icon-title {
+                                font-size: 20px;
+                                text-align: center;
+                                margin-right: 10px;
+                            }
                         }
+                        .chat-icon,.contact-icon{
+                                &:hover{
+                                    width: 180px;
+                                }
+                        }
+                        .line-icon{
+                            padding-right: 2.5px;
+                        }
+                    }
 
-                    }
-                    .line-icon{
-                        padding-top: 8px !important;
-                    }
                 }
             }
         }
     }
 
-    footer.syt-footer {
-        background-color: #fafbfd;
-        padding: 60px;
-        font-weight: 300;
-
-        .footer-flex {
-            width: 100%;
-            display: flex;
-            // justify-content: space-around;
-            // align-items: center;
-            justify-content: space-around;
-
-            @media (max-width: 767px) {
-                display: block;
-                text-align: center;
-            }
-
-            .syt-logo {
-                width: 300px;
-
-                @media (max-width: 1199px) {
-                    width: 200px;
-                }
-
-                @media (max-width: 991px) {
-                    width: 150px;
-                }
-
-                @media (max-width: 767px) {
-                    margin: 0px auto 10px;
-                }
-
-                img {
-                    width: 100%;
-                }
-            }
-
-            .contact-us {
-
-                // margin: 0 10px;
-                @media (max-width: 991px) {
-                    margin-bottom: 10px;
-                }
-            }
-
-            .information {
-
-                // margin: 0 10px;
-                @media (max-width: 991px) {
-                    margin-bottom: 10px;
-                }
-            }
-
-            .icon {
-                width: 40px;
-                margin: 0 10px;
-
-                @media (max-width: 767px) {
-                    margin: auto;
-                }
-
-                img {
-                    width: 100%;
-                }
-            }
-
-            // .footer-flex-phone {
-            //     width: 100%;
-            //     display: flex;
-            //     margin-left: 50px;
-            //     justify-content: space-around;
-
-            //     @media (max-width: 991px) {
-            //         width: 50%;
-            //         display: block;
-            //     }
-
-
-            // }
-
-
-
-            .main-title {
-                font-size: 20px;
-                color: #006cae;
-            }
-
-            .title {
-                color: #5c5c5c;
-            }
-
-            .content {
-                color: #888888;
-            }
-        }
-
-        .copyright {
-            color: #888888;
-            text-align: center;
-        }
-    }
 
     .change-nav {
         background-color: #3c85d8 !important;
@@ -542,8 +485,6 @@ body {
         .nav-link {
             color: #FFFFFF;
         }
-
-
     }
 
     .nav-no-bg {
@@ -618,6 +559,16 @@ body {
 
         50% {
             transform: translateY(10px);
+        }
+
+        100% {
+            transform: translateY(0px);
+        }
+    }
+
+    @keyframes show {
+        0% {
+            transform: translateY(500px);
         }
 
         100% {

@@ -396,7 +396,7 @@ body main.syt-main .contact-service {
 body main.syt-main .contact-service .service-btn {
   width: 60px;
   height: 60px;
-  background-color: #10318d;
+  background-color: #e69d00;
   color: #FFFFFF;
   font-size: 24px;
   text-align: center;
@@ -417,6 +417,16 @@ body main.syt-main .contact-service .service-icon .service-icon-ul {
   z-index: 2;
   bottom: 45px;
   right: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 @media (max-width: 767px) {
@@ -426,16 +436,35 @@ body main.syt-main .contact-service .service-icon .service-icon-ul {
 }
 
 body main.syt-main .contact-service .service-icon .service-icon-ul .service-icon-li a {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-flow: row-reverse;
+          flex-flow: row-reverse;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 60px;
   height: 60px;
-  background-color: #0488da;
-  color: #FFFFFF;
+  padding: 0px 5px;
+  background-color: #ffd30f;
+  color: #000000;
   font-size: 30px;
   text-align: center;
-  border-radius: 50%;
+  border-radius: 100px;
   margin-bottom: 10px;
-  padding-top: 12px;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  overflow: hidden;
+  white-space: nowrap;
+  -webkit-box-shadow: 0px 0px 5px #0000006b;
+          box-shadow: 0px 0px 5px #0000006b;
+}
+
+body main.syt-main .contact-service .service-icon .service-icon-ul .service-icon-li a:hover {
+  width: 150px;
 }
 
 @media (max-width: 767px) {
@@ -450,6 +479,8 @@ body main.syt-main .contact-service .service-icon .service-icon-ul .service-icon
 body main.syt-main .contact-service .service-icon .service-icon-ul .service-icon-li a img {
   width: 35px;
   height: 35px;
+  margin-left: 12.5px;
+  margin-right: 10px;
 }
 
 @media (max-width: 767px) {
@@ -459,101 +490,23 @@ body main.syt-main .contact-service .service-icon .service-icon-ul .service-icon
   }
 }
 
-body main.syt-main .contact-service .service-icon .service-icon-ul .line-icon {
-  padding-top: 8px !important;
+body main.syt-main .contact-service .service-icon .service-icon-ul .service-icon-li a i {
+  margin-left: 15px;
+  margin-right: 10px;
 }
 
-body footer.syt-footer {
-  background-color: #fafbfd;
-  padding: 60px;
-  font-weight: 300;
-}
-
-body footer.syt-footer .footer-flex {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-@media (max-width: 767px) {
-  body footer.syt-footer .footer-flex {
-    display: block;
-    text-align: center;
-  }
-}
-
-body footer.syt-footer .footer-flex .syt-logo {
-  width: 300px;
-}
-
-@media (max-width: 1199px) {
-  body footer.syt-footer .footer-flex .syt-logo {
-    width: 200px;
-  }
-}
-
-@media (max-width: 991px) {
-  body footer.syt-footer .footer-flex .syt-logo {
-    width: 150px;
-  }
-}
-
-@media (max-width: 767px) {
-  body footer.syt-footer .footer-flex .syt-logo {
-    margin: 0px auto 10px;
-  }
-}
-
-body footer.syt-footer .footer-flex .syt-logo img {
-  width: 100%;
-}
-
-@media (max-width: 991px) {
-  body footer.syt-footer .footer-flex .contact-us {
-    margin-bottom: 10px;
-  }
-}
-
-@media (max-width: 991px) {
-  body footer.syt-footer .footer-flex .information {
-    margin-bottom: 10px;
-  }
-}
-
-body footer.syt-footer .footer-flex .icon {
-  width: 40px;
-  margin: 0 10px;
-}
-
-@media (max-width: 767px) {
-  body footer.syt-footer .footer-flex .icon {
-    margin: auto;
-  }
-}
-
-body footer.syt-footer .footer-flex .icon img {
-  width: 100%;
-}
-
-body footer.syt-footer .footer-flex .main-title {
+body main.syt-main .contact-service .service-icon .service-icon-ul .service-icon-li a .icon-title {
   font-size: 20px;
-  color: #006cae;
-}
-
-body footer.syt-footer .footer-flex .title {
-  color: #5c5c5c;
-}
-
-body footer.syt-footer .footer-flex .content {
-  color: #888888;
-}
-
-body footer.syt-footer .copyright {
-  color: #888888;
   text-align: center;
+  margin-right: 10px;
+}
+
+body main.syt-main .contact-service .service-icon .service-icon-ul .service-icon-li .chat-icon:hover, body main.syt-main .contact-service .service-icon .service-icon-ul .service-icon-li .contact-icon:hover {
+  width: 180px;
+}
+
+body main.syt-main .contact-service .service-icon .service-icon-ul .service-icon-li .line-icon {
+  padding-right: 2.5px;
 }
 
 body .change-nav {
@@ -669,6 +622,28 @@ body a {
   50% {
     -webkit-transform: translateY(10px);
             transform: translateY(10px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@-webkit-keyframes show {
+  0% {
+    -webkit-transform: translateY(500px);
+            transform: translateY(500px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes show {
+  0% {
+    -webkit-transform: translateY(500px);
+            transform: translateY(500px);
   }
   100% {
     -webkit-transform: translateY(0px);
