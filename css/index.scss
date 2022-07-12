@@ -42,6 +42,16 @@ body {
                 img {
                     width: 100%;
                 }
+                .nav-icon-change{
+                    @media (max-width:991px) {
+                        display: none;
+                    }
+                }
+                // .nav-icon{
+                //     @media (max-width:991px) {
+                //         display: none;
+                //     }
+                // }
             }
 
             .navbar-toggler {

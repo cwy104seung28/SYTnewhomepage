@@ -16,11 +16,15 @@ $(window).scroll(function () {
     if (scroll > bannerCont) {
       $(".syt-nav").addClass("change-nav");
       $(".navbar-collapse").addClass("nav-no-bg");
+      $(".nav-icon").css("display","none");
+      $(".nav-icon-change").css("display","block");
 
       $(".navbar-toggler").css("outline","transparent");
     } else {
       $(".syt-nav").removeClass("change-nav");
       $(".navbar-collapse").removeClass("nav-no-bg");
+      $(".nav-icon").css("display","block");
+      $(".nav-icon-change").css("display","none");
 
       $(".navbar-toggler").css("outline","#223e72 2px solid");
     }

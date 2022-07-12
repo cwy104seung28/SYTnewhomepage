@@ -55,6 +55,12 @@ body nav.syt-nav .container-fluid .navbar-brand img {
   width: 100%;
 }
 
+@media (max-width: 991px) {
+  body nav.syt-nav .container-fluid .navbar-brand .nav-icon-change {
+    display: none;
+  }
+}
+
 body nav.syt-nav .container-fluid .navbar-toggler {
   outline: #223e72 2px solid;
   -webkit-transition: 0.5s ease-in-out;
