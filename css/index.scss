@@ -374,7 +374,6 @@ body {
         }
         .syt-service {
             width: 100%;
-            height: 100vh;
             // opacity: 0;
             transition: 0.5s ease-in-out;
             position: relative;
@@ -435,8 +434,11 @@ body {
 
                 .card {
                     position: relative;
-                    height: 650px;
+                    height: 80vh;
                     transition: transform .5s linear;
+                    // @media (max-width:1299px) {
+                    //     height: 500px;
+                    // }
                     &:hover {
                         .card-body {
                             height: 100%;
