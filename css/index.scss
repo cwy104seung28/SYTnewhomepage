@@ -175,6 +175,10 @@ body {
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
+            
+            @media (max-width:991px) {
+                height: 100vh;
+            }
 
             .syt-text {
                 position: absolute;
@@ -190,7 +194,7 @@ body {
 
                 @media (max-width:991px) {
                     text-align: center;
-                    // top: 30%;
+                    top: 30%;
                     left: calc(50% - 170px);
                 }
 
@@ -203,14 +207,17 @@ body {
                 button {
                     width: 200px;
                     height: 50px;
+
                     background-color: #FBD914;
                     color: #000000;
+
                     font-size: 26px;
                     letter-spacing: 1px;
+
                     margin-top: 30px;
                     border-radius: 10px;
-                    padding-top: 5px;
-                    transition: 0.5s ease-in-out;
+
+                    transition: 0.25s ease-in-out;
 
                     @media (max-width:1299px) {
                         margin-top: 30px;
@@ -229,14 +236,12 @@ body {
                     }
 
                     &:hover {
-                        background-color: #192D79;
-                        color: #FBD914;
+                        background-color: #a78106;
+                        color: #ffffff;
                     }
 
                     img {
                         width: 40px;
-                        margin-right: 5px;
-
                         @media (max-width:991px) {
                             width: 30px;
                         }
@@ -349,12 +354,12 @@ body {
 
             .scroll-down {
                 position: absolute;
-                color: #FFFFFF;
+                color: #505050;
                 text-align: center;
                 left: calc(50% - 85px);
                 bottom: 30px;
                 font-size: 24px;
-
+                text-shadow: rgba(0, 0, 0, 0.5)5px 5px 5px;
                 // animation: scroll-down-animation 2s infinite linear;
                 @media (max-width: 991px) {
                     display: none;
@@ -378,7 +383,7 @@ body {
                 height: 60px;
                 background-color: #e69d00;
                 color: #FFFFFF;
-                font-size: 24px;
+                font-size: 28px;
                 text-align: center;
                 border-radius: 50%;
 

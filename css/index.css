@@ -177,6 +177,12 @@ body main.syt-main .syt-banner {
   background-size: cover;
 }
 
+@media (max-width: 991px) {
+  body main.syt-main .syt-banner {
+    height: 100vh;
+  }
+}
+
 body main.syt-main .syt-banner .syt-text {
   position: absolute;
   top: 20%;
@@ -193,6 +199,7 @@ body main.syt-main .syt-banner .syt-text {
 @media (max-width: 991px) {
   body main.syt-main .syt-banner .syt-text {
     text-align: center;
+    top: 30%;
     left: calc(50% - 170px);
   }
 }
@@ -212,9 +219,8 @@ body main.syt-main .syt-banner .syt-text button {
   letter-spacing: 1px;
   margin-top: 30px;
   border-radius: 10px;
-  padding-top: 5px;
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
+  -webkit-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
 }
 
 @media (max-width: 1299px) {
@@ -240,13 +246,12 @@ body main.syt-main .syt-banner .syt-text button {
 }
 
 body main.syt-main .syt-banner .syt-text button:hover {
-  background-color: #192D79;
-  color: #FBD914;
+  background-color: #a78106;
+  color: #ffffff;
 }
 
 body main.syt-main .syt-banner .syt-text button img {
   width: 40px;
-  margin-right: 5px;
 }
 
 @media (max-width: 991px) {
@@ -367,11 +372,12 @@ body main.syt-main .syt-banner #fade2 {
 
 body main.syt-main .syt-banner .scroll-down {
   position: absolute;
-  color: #FFFFFF;
+  color: #505050;
   text-align: center;
   left: calc(50% - 85px);
   bottom: 30px;
   font-size: 24px;
+  text-shadow: rgba(0, 0, 0, 0.5) 5px 5px 5px;
 }
 
 @media (max-width: 991px) {
@@ -398,7 +404,7 @@ body main.syt-main .contact-service .service-btn {
   height: 60px;
   background-color: #e69d00;
   color: #FFFFFF;
-  font-size: 24px;
+  font-size: 28px;
   text-align: center;
   border-radius: 50%;
 }
