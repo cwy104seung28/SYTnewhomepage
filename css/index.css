@@ -221,6 +221,7 @@ body main.syt-main .syt-banner .syt-text button {
   border-radius: 10px;
   -webkit-transition: 0.25s ease-in-out;
   transition: 0.25s ease-in-out;
+  white-space: nowrap;
 }
 
 @media (max-width: 1299px) {
@@ -390,6 +391,344 @@ body main.syt-main .syt-banner .scroll-down i {
   display: block;
   -webkit-animation: arrow-animation 1s infinite linear;
           animation: arrow-animation 1s infinite linear;
+}
+
+body main.syt-main .syt-service {
+  width: 100%;
+  height: 100vh;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  position: relative;
+  color: #000;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 991px) {
+  body main.syt-main .syt-service {
+    height: auto;
+  }
+}
+
+body main.syt-main .syt-service .container h2 {
+  color: #006cae;
+  padding-top: 80px;
+  margin-bottom: 75px;
+}
+
+body main.syt-main .syt-service .container h3 {
+  color: #FFFFFF;
+  font-weight: 600;
+}
+
+body main.syt-main .syt-service .container p {
+  font-size: 20px;
+}
+
+@media (max-width: 1436px) {
+  body main.syt-main .syt-service .container p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 991px) {
+  body main.syt-main .syt-service .container p {
+    font-size: 16px;
+  }
+}
+
+body main.syt-main .syt-service .container #card-1 {
+  background-image: url("../img/service1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 20%;
+}
+
+body main.syt-main .syt-service .container #card-2 {
+  background-image: url("../img/service2.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 35%;
+}
+
+body main.syt-main .syt-service .container #card-3 {
+  background-image: url("../img/service3.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 67.5%;
+}
+
+body main.syt-main .syt-service .container .card {
+  position: relative;
+  height: 650px;
+  -webkit-transition: -webkit-transform .5s linear;
+  transition: -webkit-transform .5s linear;
+  transition: transform .5s linear;
+  transition: transform .5s linear, -webkit-transform .5s linear;
+}
+
+body main.syt-main .syt-service .container .card:hover .card-body {
+  height: 100%;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  padding-top: 55%;
+}
+
+@media (max-width: 1299px) {
+  body main.syt-main .syt-service .container .card:hover .card-body {
+    padding-top: 90%;
+  }
+}
+
+@media (max-width: 991px) {
+  body main.syt-main .syt-service .container .card:hover .card-body {
+    height: auto;
+    padding-top: 20px;
+  }
+}
+
+@media (max-width: 991px) {
+  body main.syt-main .syt-service .container .card {
+    height: 350px;
+  }
+}
+
+@media (max-width: 991px) {
+  body main.syt-main .syt-service .container .card {
+    margin-bottom: 30px;
+  }
+}
+
+body main.syt-main .syt-service .container .card .card-body {
+  width: 100%;
+  height: 200px;
+  position: absolute;
+  bottom: 0px;
+  text-align: left;
+  background-color: #0000008e;
+  padding: 20px;
+  border-bottom-left-radius: .25rem;
+  border-bottom-right-radius: .25rem;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+@media (max-width: 991px) {
+  body main.syt-main .syt-service .container .card .card-body {
+    height: auto;
+    -webkit-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+  }
+}
+
+@media (max-width: 399px) {
+  body main.syt-main .syt-service .container .card .card-body {
+    padding: 10px;
+  }
+}
+
+body main.syt-main .syt-service .container .card .card-body .card-text {
+  height: 70px;
+  color: #FFFFAC;
+}
+
+@media (max-width: 991px) {
+  body main.syt-main .syt-service .container .card .card-body .card-text {
+    height: auto;
+  }
+}
+
+body main.syt-main .syt-service .container .card .card-body a {
+  height: 50px;
+  display: inline;
+  bottom: 20px;
+  padding: 12px;
+  font-size: 18px;
+  text-decoration: none;
+  border-radius: 10px;
+  background-color: #FFFFAC;
+  color: #3b3b3b;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+body main.syt-main .syt-service .container .card .card-body a:hover {
+  background-color: #3b3b3b;
+  color: #f4f884;
+}
+
+@media (max-width: 991px) {
+  body main.syt-main .syt-service .container .card .card-body a {
+    display: inline-block;
+  }
+}
+
+body main.syt-main .syt-service .container .card-border {
+  border: none;
+}
+
+body main.syt-main .syt-service .container .hoverzoom:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  border: none !important;
+  -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2) !important;
+          box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2) !important;
+}
+
+body main.syt-main .syt-service .container .hovershadow {
+  -webkit-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+          box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+  border-radius: 4px;
+}
+
+body main.syt-main .syt-service .container .hoverzoom {
+  -webkit-transition: -webkit-transform .5s linear;
+  transition: -webkit-transform .5s linear;
+  transition: transform .5s linear;
+  transition: transform .5s linear, -webkit-transform .5s linear;
+}
+
+body main.syt-main .syt-adventage {
+  height: auto;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+body main.syt-main .syt-adventage h2 {
+  padding-top: 80px;
+  margin-bottom: 75px;
+  text-align: center;
+}
+
+body main.syt-main .syt-adventage h2,
+body main.syt-main .syt-adventage h3 {
+  padding-top: 30px;
+  color: #006cae;
+}
+
+body main.syt-main .syt-adventage .adventage-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 0px;
+}
+
+@media (max-width: 1199px) {
+  body main.syt-main .syt-adventage .adventage-container {
+    display: block;
+  }
+}
+
+body main.syt-main .syt-adventage .adventage-container .adventage-pic img {
+  width: 100%;
+  border-top-right-radius: 250px;
+  border-bottom-right-radius: 250px;
+}
+
+@media (max-width: 1199px) {
+  body main.syt-main .syt-adventage .adventage-container .adventage-pic img {
+    width: 80%;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 767px) {
+  body main.syt-main .syt-adventage .adventage-container .adventage-pic img {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+}
+
+body main.syt-main .syt-adventage .adventage-container .adventage-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-right: 130px;
+}
+
+@media (max-width: 1199px) {
+  body main.syt-main .syt-adventage .adventage-container .adventage-items {
+    padding-right: 0px;
+  }
+}
+
+body main.syt-main .syt-adventage .adventage-container .adventage-card {
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+body main.syt-main .syt-adventage .adventage-container .adventage-card .adventage-img {
+  width: 150px;
+  height: 100px;
+  max-height: 150px;
+  margin: 0 auto 10px;
+}
+
+@media (max-width: 767px) {
+  body main.syt-main .syt-adventage .adventage-container .adventage-card .adventage-img {
+    width: 75px;
+    height: 50px;
+  }
+}
+
+body main.syt-main .syt-adventage .adventage-container .adventage-card .adventage-img img {
+  height: 100%;
+}
+
+body main.syt-main .syt-adventage .adventage-container .adventage-card .adventage-title {
+  width: 220px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #FFFFFF;
+  background-color: #255caf;
+  margin: 0px auto 10px;
+  padding: 10px;
+}
+
+@media (max-width: 767px) {
+  body main.syt-main .syt-adventage .adventage-container .adventage-card .adventage-title {
+    width: 180px;
+    font-size: 20px;
+    padding: 5px;
+  }
+}
+
+@media (max-width: 575px) {
+  body main.syt-main .syt-adventage .adventage-container .adventage-card .adventage-title {
+    width: 145px;
+    font-size: 16px;
+  }
+}
+
+body main.syt-main .syt-adventage .adventage-container .adventage-card .adventage-content {
+  margin: auto;
+  font-size: 18px;
+  color: #255caf;
+}
+
+@media (max-width: 767px) {
+  body main.syt-main .syt-adventage .adventage-container .adventage-card .adventage-content {
+    width: 200px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 575px) {
+  body main.syt-main .syt-adventage .adventage-container .adventage-card .adventage-content {
+    width: 150px;
+  }
+}
+
+@media (max-width: 399px) {
+  body main.syt-main .syt-adventage .adventage-container .adventage-card .adventage-content {
+    font-size: 14px;
+  }
 }
 
 body main.syt-main .contact-service {
