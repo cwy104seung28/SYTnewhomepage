@@ -178,7 +178,7 @@ body {
 
             .syt-text {
                 position: absolute;
-                top: 20%;
+                top: 25%;
                 left: 200px;
                 letter-spacing: 5px;
 
@@ -294,7 +294,7 @@ body {
 
                 .syt-content {
                     font-size: 55px;
-                    color: #FBD914;
+                    color: #FFFFFF;
                     // text-shadow: rgba(0, 0, 0, 0.5)2px 2px 5px;
 
                     @media (max-width:1299px) {
@@ -315,14 +315,19 @@ body {
                 position: absolute;
                 font-size: 76px;
                 text-shadow: rgba(0, 0, 0, 0.5)5px 5px 5px;
+                //原版本
                 top: 0px;
                 left: 180px;
                 color: #FBD914;
+                //新版本
+                left: 200px;
 
                 @media (max-width:1299px) {
                     // top: 251px;
                     left: 140px;
                     font-size: 60px;
+                    //新版本
+                    left: 160px;
                 }
 
                 @media (max-width:991px) {
@@ -384,8 +389,8 @@ body {
             }
 
             .service-icon {
+                display: none;
 
-                // display: none;
                 .service-icon-ul {
                     list-style: none;
                     position: absolute;
@@ -401,6 +406,7 @@ body {
                     }
 
                     .service-icon-li {
+
                         a {
                             display: flex;
                             flex-flow: row-reverse;
@@ -424,8 +430,10 @@ body {
                             white-space: nowrap;
 
                             box-shadow: 0px 0px 5px #0000006b;
+
                             &:hover {
                                 width: 150px;
+
                                 @media (max-width:767px) {
                                     width: 50px;
                                     background-color: #000000;
@@ -451,7 +459,8 @@ body {
                                     height: 28px;
                                 }
                             }
-                            i{
+
+                            i {
                                 margin-left: 10px;
                                 margin-right: 10px;
                             }
@@ -460,31 +469,40 @@ body {
                                 font-size: 20px;
                                 text-align: center;
                                 margin-right: 10px;
+
                                 @media (max-width:767px) {
                                     font-size: 16px;
                                 }
                             }
                         }
-                        .chat-icon,.contact-icon{
-                                &:hover{
-                                    width: 180px;
-                                    @media (max-width:767px) {
-                                        width: 50px;
-                                    }
+
+                        .chat-icon,
+                        .contact-icon {
+                            &:hover {
+                                width: 180px;
+
+                                @media (max-width:767px) {
+                                    width: 50px;
                                 }
+                            }
                         }
-                        .line-icon{
+
+                        .line-icon {
                             padding: 0px 2.5px;
-                            .line-img-hover{
+
+                            .line-img-hover {
                                 display: none;
                             }
+
                             @media (max-width:767px) {
                                 padding: 0px 1px;
-                                &:hover{
-                                    .line-img{
+
+                                &:hover {
+                                    .line-img {
                                         display: none;
                                     }
-                                    .line-img-hover{
+
+                                    .line-img-hover {
                                         display: block;
                                     }
                                 }
@@ -497,6 +515,18 @@ body {
         }
     }
 
+    .white-space {
+        display: none;
+
+        @media (max-width: 991px) {
+            display: block;
+        }
+    }
+
+    .active {
+        display: block !important;
+        animation: show 1s;
+    }
 
     .change-nav {
         background-color: #3c85d8 !important;

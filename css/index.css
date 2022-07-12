@@ -179,7 +179,7 @@ body main.syt-main .syt-banner {
 
 body main.syt-main .syt-banner .syt-text {
   position: absolute;
-  top: 20%;
+  top: 25%;
   left: 200px;
   letter-spacing: 5px;
 }
@@ -307,7 +307,7 @@ body main.syt-main .syt-banner .syt-text .syt-title {
 
 body main.syt-main .syt-banner .syt-text .syt-content {
   font-size: 55px;
-  color: #FBD914;
+  color: #FFFFFF;
 }
 
 @media (max-width: 1299px) {
@@ -335,12 +335,14 @@ body main.syt-main .syt-banner #fade2 {
   top: 0px;
   left: 180px;
   color: #FBD914;
+  left: 200px;
 }
 
 @media (max-width: 1299px) {
   body main.syt-main .syt-banner #fade2 {
     left: 140px;
     font-size: 60px;
+    left: 160px;
   }
 }
 
@@ -409,6 +411,10 @@ body main.syt-main .contact-service .service-btn {
     height: 50px;
     font-size: 24px;
   }
+}
+
+body main.syt-main .contact-service .service-icon {
+  display: none;
 }
 
 body main.syt-main .contact-service .service-icon .service-icon-ul {
@@ -515,12 +521,14 @@ body main.syt-main .contact-service .service-icon .service-icon-ul .service-icon
   }
 }
 
-body main.syt-main .contact-service .service-icon .service-icon-ul .service-icon-li .chat-icon:hover, body main.syt-main .contact-service .service-icon .service-icon-ul .service-icon-li .contact-icon:hover {
+body main.syt-main .contact-service .service-icon .service-icon-ul .service-icon-li .chat-icon:hover,
+body main.syt-main .contact-service .service-icon .service-icon-ul .service-icon-li .contact-icon:hover {
   width: 180px;
 }
 
 @media (max-width: 767px) {
-  body main.syt-main .contact-service .service-icon .service-icon-ul .service-icon-li .chat-icon:hover, body main.syt-main .contact-service .service-icon .service-icon-ul .service-icon-li .contact-icon:hover {
+  body main.syt-main .contact-service .service-icon .service-icon-ul .service-icon-li .chat-icon:hover,
+  body main.syt-main .contact-service .service-icon .service-icon-ul .service-icon-li .contact-icon:hover {
     width: 50px;
   }
 }
@@ -543,6 +551,22 @@ body main.syt-main .contact-service .service-icon .service-icon-ul .service-icon
   body main.syt-main .contact-service .service-icon .service-icon-ul .service-icon-li .line-icon:hover .line-img-hover {
     display: block;
   }
+}
+
+body .white-space {
+  display: none;
+}
+
+@media (max-width: 991px) {
+  body .white-space {
+    display: block;
+  }
+}
+
+body .active {
+  display: block !important;
+  -webkit-animation: show 1s;
+          animation: show 1s;
 }
 
 body .change-nav {

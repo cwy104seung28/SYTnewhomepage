@@ -38,6 +38,10 @@ $(window).scroll(function () {
     mousewheel: true,
     keyboard: true,
   });
+
+  function serviceBtn(){
+    $(".service-icon").toggleClass("active")
+  }
 // const express = require('express');
 // const app = express();
 // // 加入這兩行
