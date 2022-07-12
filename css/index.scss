@@ -178,9 +178,11 @@ body {
 
             .syt-text {
                 position: absolute;
-                top: 25%;
+                top: 20%;
                 left: 200px;
                 letter-spacing: 5px;
+                // //新版本
+                // top: 25%;
 
                 @media (max-width:1299px) {
                     left: 100px;
@@ -294,7 +296,7 @@ body {
 
                 .syt-content {
                     font-size: 55px;
-                    color: #FFFFFF;
+                    color: #FBD914;
                     // text-shadow: rgba(0, 0, 0, 0.5)2px 2px 5px;
 
                     @media (max-width:1299px) {
@@ -319,15 +321,14 @@ body {
                 top: 0px;
                 left: 180px;
                 color: #FBD914;
-                //新版本
-                left: 200px;
+                // //新版本
+                // left: 200px;
 
                 @media (max-width:1299px) {
-                    // top: 251px;
                     left: 140px;
                     font-size: 60px;
-                    //新版本
-                    left: 160px;
+                    // //新版本
+                    // left: 160px;
                 }
 
                 @media (max-width:991px) {
@@ -389,14 +390,14 @@ body {
             }
 
             .service-icon {
-                display: none;
+                // display: none;
 
                 .service-icon-ul {
                     list-style: none;
                     position: absolute;
                     z-index: 2;
                     bottom: 45px;
-                    right: 0px;
+                    right: -100px;
                     display: flex;
                     flex-direction: column;
                     align-items: flex-end;
@@ -475,7 +476,6 @@ body {
                                 }
                             }
                         }
-
                         .chat-icon,
                         .contact-icon {
                             &:hover {
@@ -524,8 +524,51 @@ body {
     }
 
     .active {
-        display: block !important;
-        animation: show 1s;
+
+        .line-icon{
+            transform: translateX(-100px) !important;
+            transition: 0.9s ease-in-out !important;
+        }
+        .chat-icon{
+            transform: translateX(-100px) !important;
+            transition: 0.8s ease-in-out !important;
+        }
+        .contact-icon{
+            transform: translateX(-100px) !important;
+            transition: 0.7s ease-in-out !important;
+        }
+        .email-icon{
+            transform: translateX(-100px) !important;
+            transition: 0.6s ease-in-out !important;
+        }
+        .phone-icon{
+            transform: translateX(-100px) !important;
+            transition: 0.5s ease-in-out !important;
+        }
+        
+    }
+    .not-active{
+        transform: translateX(100px) !important;
+        .line-icon{
+            transform: translateX(-100px) !important;
+            transition: 0.5s ease-in-out !important;
+        }
+        .chat-icon{
+            transform: translateX(-100px) !important;
+            transition: 0.6s ease-in-out !important;
+        }
+        .contact-icon{
+            transform: translateX(-100px) !important;
+            transition: 0.7s ease-in-out !important;
+        }
+        .email-icon{
+            transform: translateX(-100px) !important;
+            transition: 0.8s ease-in-out !important;
+        }
+        .phone-icon{
+            transform: translateX(-100px) !important;
+            transition: 0.9s ease-in-out !important;
+        }
     }
 
     .change-nav {
@@ -568,26 +611,14 @@ body {
 
     button {
         border: none;
-    }
-
-
-    .syt-title {
-        color: #FBD914;
-        font-size: 78px;
-    }
-
-    .syt-content {
-        color: #FFFFFF;
-        font-size: 54px;
-    }
-
-    .syt-show {
-        display: none;
-
-        @media (max-width:409px) {
-            display: block;
+        outline: none;
+        :focus{
+            border: none;
+            outline: none;
         }
+        
     }
+
 
     a {
         text-decoration: none;
@@ -623,11 +654,11 @@ body {
 
     @keyframes show {
         0% {
-            transform: translateY(500px);
+            transform: translateX(100px);
         }
 
         100% {
-            transform: translateY(0px);
+            transform: translateX(0px);
         }
     }
 }

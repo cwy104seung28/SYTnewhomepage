@@ -40,7 +40,8 @@ $(window).scroll(function () {
   });
 
   function serviceBtn(){
-    $(".service-icon").toggleClass("active")
+    $(".service-icon-ul").toggleClass("active");
+    $(".service-icon-ul").toggleClass("not-active");
   }
 // const express = require('express');
 // const app = express();
