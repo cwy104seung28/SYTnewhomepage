@@ -596,6 +596,12 @@ body main.syt-main .syt-adventage .container {
   max-width: 70%;
 }
 
+@media (max-width: 767px) {
+  body main.syt-main .syt-adventage .container {
+    max-width: 90%;
+  }
+}
+
 body main.syt-main .syt-adventage .adventage-container {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -667,8 +673,15 @@ body main.syt-main .syt-adventage .adventage-container .adventage-card .adventag
 
 @media (max-width: 575px) {
   body main.syt-main .syt-adventage .adventage-container .adventage-card .adventage-title {
-    width: 145px;
+    width: 150px;
     font-size: 16px;
+  }
+}
+
+@media (max-width: 399px) {
+  body main.syt-main .syt-adventage .adventage-container .adventage-card .adventage-title {
+    width: 140px;
+    font-size: 14px;
   }
 }
 
@@ -693,7 +706,8 @@ body main.syt-main .syt-adventage .adventage-container .adventage-card .adventag
 
 @media (max-width: 399px) {
   body main.syt-main .syt-adventage .adventage-container .adventage-card .adventage-content {
-    font-size: 14px;
+    width: 140px;
+    font-size: 12px;
   }
 }
 

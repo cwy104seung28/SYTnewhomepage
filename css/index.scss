@@ -603,6 +603,9 @@ body {
 
             .container {
                 max-width: 70%;
+                @media (max-width: 767px) {
+                    max-width: 90%;
+                }
             }
 
             .adventage-container {
@@ -659,8 +662,12 @@ body {
                         }
 
                         @media (max-width: 575px) {
-                            width: 145px;
+                            width: 150px;
                             font-size: 16px;
+                        }
+                        @media (max-width: 399px) {
+                            width: 140px;
+                            font-size: 14px;
                         }
                     }
 
@@ -680,7 +687,8 @@ body {
                         }
 
                         @media (max-width: 399px) {
-                            font-size: 14px;
+                            width: 140px;
+                            font-size: 12px;
                         }
                     }
                 }
