@@ -5,6 +5,7 @@ body {
     position: relative;
     overflow-x: hidden;
     letter-spacing: 1px;
+
     nav.syt-nav {
         width: 100%;
         background-color: transparent;
@@ -741,6 +742,7 @@ body {
         }
 
         .syt-works {
+
             // background-color: #b8c7e6;
             @media (max-width: 991px) {
                 height: auto;
@@ -751,14 +753,18 @@ body {
                 padding-top: 100px;
                 margin-bottom: 50px;
             }
-            .container{
+
+            .container {
                 max-width: 85%;
+
                 @media (max-width: 991px) {
                     max-width: 100%;
                 }
             }
+
             .works-container {
                 margin-bottom: 50px;
+
                 .swiper {
                     width: 100%;
                     // height: 60%;
@@ -824,6 +830,7 @@ body {
                                     padding: 7px 15px 5px;
                                     margin-right: 10px;
                                     margin-bottom: 10px;
+
                                     @media (max-width: 767px) {
                                         margin-right: 5px;
                                         margin-bottom: 5px;
@@ -836,6 +843,7 @@ body {
                                 color: #000000;
                                 padding-top: 0px;
                                 margin-bottom: 10px;
+
                                 @media (max-width: 767px) {
                                     font-size: 20px;
                                 }
@@ -844,6 +852,7 @@ body {
                             .works-content {
                                 margin-bottom: 10px;
                                 color: #666666;
+
                                 @media (max-width: 767px) {
                                     font-size: 16px;
                                 }
@@ -863,6 +872,7 @@ body {
                                     color: #FBD914;
                                     background-color: #303030;
                                 }
+
                                 @media (max-width: 767px) {
                                     font-size: 18px;
                                 }
@@ -892,9 +902,10 @@ body {
                         background-color: #979797;
                         opacity: 1;
                         margin: 0 20px;
+
                         @media (max-width: 767px) {
                             width: 10px;
-                        height: 10px;
+                            height: 10px;
                             margin: 0 10px;
                         }
                     }
@@ -907,6 +918,7 @@ body {
                     .swiper-button-prev::after {
                         display: none;
                     }
+
                     .swiper-button-next i,
                     .swiper-button-prev i {
                         width: 100%;
@@ -1151,6 +1163,14 @@ body {
 
             .content {
                 color: #888888;
+
+                @media (max-width: 1199px) {
+                    max-width: 240px;
+                }
+
+                @media (max-width: 767px) {
+                    max-width: 100%;
+                }
             }
         }
 

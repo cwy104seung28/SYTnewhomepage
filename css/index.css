@@ -1203,6 +1203,18 @@ body footer.syt-footer .footer-flex .content {
   color: #888888;
 }
 
+@media (max-width: 1199px) {
+  body footer.syt-footer .footer-flex .content {
+    max-width: 240px;
+  }
+}
+
+@media (max-width: 767px) {
+  body footer.syt-footer .footer-flex .content {
+    max-width: 100%;
+  }
+}
+
 body footer.syt-footer .copyright {
   color: #888888;
   text-align: center;
