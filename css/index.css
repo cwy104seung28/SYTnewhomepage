@@ -741,7 +741,7 @@ body main.syt-main .syt-adventage .syt-contact-link {
 body main.syt-main .syt-adventage .syt-contact-link .contact-link-btn {
   width: 200px;
   height: 50px;
-  padding-top: 6px;
+  padding-top: 10px;
   border-radius: 25px;
   background-color: #f5d62a;
   color: #000000;
@@ -759,6 +759,7 @@ body main.syt-main .syt-adventage .syt-contact-link .contact-link-btn {
     height: 40px;
     font-size: 20px;
     bottom: 20px;
+    padding-top: 6px;
     left: calc(50% - 75px);
   }
 }
