@@ -916,14 +916,14 @@ body {
 
                     .swiper-button-next {
                         right: 10px;
-                        @media (max-width: 767px) {
+                        @media (max-width: 991px) {
                             right: 15px;
                         }
                     }
 
                     .swiper-button-prev {
                         left: 10px;
-                        @media (max-width: 767px) {
+                        @media (max-width: 991px) {
                             left: 15px;
                         }
                     }
