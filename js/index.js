@@ -1,73 +1,103 @@
-// 滑動到最上方的效果---------------
+//字體
+(function (d) {
+  var config = {
+      kitId: "lsi8hjo",
+      scriptTimeout: 3000,
+      async: true,
+    },
+    h = d.documentElement,
+    t = setTimeout(function () {
+      h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+    }, config.scriptTimeout),
+    tk = d.createElement("script"),
+    f = false,
+    s = d.getElementsByTagName("script")[0],
+    a;
+  h.className += " wf-loading";
+  tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+  tk.async = true;
+  tk.onload = tk.onreadystatechange = function () {
+    a = this.readyState;
+    if (f || (a && a != "complete" && a != "loaded")) return;
+    f = true;
+    clearTimeout(t);
+    try {
+      Typekit.load(config);
+    } catch (e) {}
+  };
+  s.parentNode.insertBefore(tk, s);
+})(document);
+//banner字
+function fadetext() {
+  fade.style.filter = "alpha(opacity=" + x + ", style=0)";
+  x = y < 50 ? x + 4 : x - 4;
+  y += 2;
+  if (y == 100) {
+    z = z >= texts.length - 1 ? 1 : z + 1;
+    y = 0;
+    fade.innerHTML = texts[z];
+  }
+  setTimeout("fadetext();", 50);
+}
+
+var texts = new Array(3),
+  tcolor = new Array(3),
+  x = 0,
+  y = 0,
+  z = 1;
+texts[1] = "公文模組";
+texts[2] = "管理系統";
+texts[3] = "工程模組";
+fade.innerHTML = texts[z];
+window.onload = fadetext;
+// 滑動效果
 $(window).scroll(function () {
-    setScroll();
-  });
+  setScroll();
+});
 
-  function setScroll() {
-    var win = $(window),
-      hWin = win.height(),
+function setScroll() {
+  var win = $(window),
+    hWin = win.height(),
     //   wWin = win.width(),
-      scroll = $(window).scrollTop();
-  
-    var bannerCont = $("#banner").offset().top;
-    console.log(scroll);
-    
-    console.log(bannerCont);
-    if (scroll > bannerCont) {
-      $(".syt-nav").addClass("change-nav");
-      $(".navbar-collapse").addClass("nav-no-bg");
-      $(".nav-icon").css("display","none");
-      $(".nav-icon-change").css("display","block");
+    scroll = $(window).scrollTop();
 
-      $(".navbar-toggler").css("outline","transparent");
-    } else {
-      $(".syt-nav").removeClass("change-nav");
-      $(".navbar-collapse").removeClass("nav-no-bg");
-      $(".nav-icon").css("display","block");
-      $(".nav-icon-change").css("display","none");
+  var bannerCont = $("#banner").offset().top;
+  console.log(scroll);
 
-      $(".navbar-toggler").css("outline","#223e72 2px solid");
-    }
+  console.log(bannerCont);
+  if (scroll > bannerCont) {
+    $(".syt-nav").addClass("change-nav");
+    $(".navbar-collapse").addClass("nav-no-bg");
+    $(".nav-icon").css("display", "none");
+    $(".nav-icon-change").css("display", "block");
+
+    $(".navbar-toggler").css("outline", "transparent");
+  } else {
+    $(".syt-nav").removeClass("change-nav");
+    $(".navbar-collapse").removeClass("nav-no-bg");
+    $(".nav-icon").css("display", "block");
+    $(".nav-icon-change").css("display", "none");
+
+    $(".navbar-toggler").css("outline", "#223e72 2px solid");
   }
-  // swiper
-  var swiper = new Swiper(".mySwiper", {
-    cssMode: true,
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    pagination: {
-      el: ".swiper-pagination",
-    },
-    mousewheel: true,
-    keyboard: true,
-  });
+}
+// swiper
+var swiper = new Swiper(".mySwiper", {
+  cssMode: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+  },
+  mousewheel: true,
+  keyboard: true,
+  loop: true
+});
 
-  function serviceBtn(){
-    $(".service-icon-ul").toggleClass("active");
-  }
-// const express = require('express');
-// const app = express();
-// // 加入這兩行
-// const server = require('http').Server(app);
-// const io = require('socket.io')(server);
- 
-// app.get('/', (req, res) => {
-//     res.sendFile('C:/works/banner-sample-2/test.html');
-// });
- 
-// // 當發生連線事件
-// io.on('connection', (socket) => {
-//     console.log('Hello!');  // 顯示 Hello!
- 
-//     // 當發生離線事件
-//     socket.on('disconnect', () => {
-//         console.log('Bye~');  // 顯示 bye~
-//     });
-// });
- 
-// // 注意，這邊的 server 原本是 app
-// server.listen(3000, () => {
-//     console.log("Server Started. http://localhost:3000");
-// });
- 
+function serviceBtn() {
+  $(".service-icon-ul").toggleClass("active");
+}
+
+
