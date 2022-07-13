@@ -789,7 +789,7 @@ body {
                         padding: 0px 30px 30px;
                     }
                     @media (max-width: 576px) {
-                        padding: 0px 20px 20px;
+                        padding: 0px 20px 30px;
                     }
 
                     .swiper-wrapper {
@@ -832,12 +832,16 @@ body {
 
                         .works-info {
                             padding: 20px 35px 20px 20px;
-
+                            @media (max-width: 991px) {
+                                text-align: center;
+                            }
                             .works-tags {
                                 display: flex;
                                 flex-wrap: wrap;
                                 margin-bottom: 20px;
-
+                                @media (max-width: 991px) {
+                                    justify-content: center;
+                                }
                                 .tag {
                                     background-color: #fbc514;
                                     color: #021494;
@@ -846,7 +850,7 @@ body {
                                     margin-right: 10px;
                                     margin-bottom: 10px;
 
-                                    @media (max-width: 767px) {
+                                    @media (max-width: 576px) {
                                         margin-right: 5px;
                                         margin-bottom: 5px;
                                         font-size: 14px;
@@ -859,7 +863,7 @@ body {
                                 padding-top: 0px;
                                 margin-bottom: 10px;
 
-                                @media (max-width: 767px) {
+                                @media (max-width: 576px) {
                                     font-size: 20px;
                                 }
                             }
@@ -868,7 +872,7 @@ body {
                                 margin-bottom: 10px;
                                 color: #666666;
 
-                                @media (max-width: 767px) {
+                                @media (max-width: 576px) {
                                     font-size: 16px;
                                 }
                             }
@@ -888,7 +892,7 @@ body {
                                     background-color: #303030;
                                 }
 
-                                @media (max-width: 767px) {
+                                @media (max-width: 576px) {
                                     width: 100px;
                                     height: 30px;
                                     font-size: 18px;

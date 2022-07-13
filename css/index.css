@@ -811,7 +811,7 @@ body main.syt-main .syt-works .works-container .swiper {
 
 @media (max-width: 576px) {
   body main.syt-main .syt-works .works-container .swiper {
-    padding: 0px 20px 20px;
+    padding: 0px 20px 30px;
   }
 }
 
@@ -865,6 +865,12 @@ body main.syt-main .syt-works .works-container .swiper .swiper-slide .works-info
   padding: 20px 35px 20px 20px;
 }
 
+@media (max-width: 991px) {
+  body main.syt-main .syt-works .works-container .swiper .swiper-slide .works-info {
+    text-align: center;
+  }
+}
+
 body main.syt-main .syt-works .works-container .swiper .swiper-slide .works-info .works-tags {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -872,6 +878,14 @@ body main.syt-main .syt-works .works-container .swiper .swiper-slide .works-info
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-bottom: 20px;
+}
+
+@media (max-width: 991px) {
+  body main.syt-main .syt-works .works-container .swiper .swiper-slide .works-info .works-tags {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 body main.syt-main .syt-works .works-container .swiper .swiper-slide .works-info .works-tags .tag {
@@ -883,7 +897,7 @@ body main.syt-main .syt-works .works-container .swiper .swiper-slide .works-info
   margin-bottom: 10px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 576px) {
   body main.syt-main .syt-works .works-container .swiper .swiper-slide .works-info .works-tags .tag {
     margin-right: 5px;
     margin-bottom: 5px;
@@ -897,7 +911,7 @@ body main.syt-main .syt-works .works-container .swiper .swiper-slide .works-info
   margin-bottom: 10px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 576px) {
   body main.syt-main .syt-works .works-container .swiper .swiper-slide .works-info .works-title {
     font-size: 20px;
   }
@@ -908,7 +922,7 @@ body main.syt-main .syt-works .works-container .swiper .swiper-slide .works-info
   color: #666666;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 576px) {
   body main.syt-main .syt-works .works-container .swiper .swiper-slide .works-info .works-content {
     font-size: 16px;
   }
@@ -931,7 +945,7 @@ body main.syt-main .syt-works .works-container .swiper .swiper-slide .works-info
   background-color: #303030;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 576px) {
   body main.syt-main .syt-works .works-container .swiper .swiper-slide .works-info .works-more-btn {
     width: 100px;
     height: 30px;
