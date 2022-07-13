@@ -784,6 +784,13 @@ body {
                         height: auto;
                         padding: 0px 50px 50px;
                     }
+                    @media (max-width: 767px) {
+
+                        padding: 0px 30px 30px;
+                    }
+                    @media (max-width: 576px) {
+                        padding: 0px 20px 20px;
+                    }
 
                     .swiper-wrapper {
                         @media (max-width: 991px) {
@@ -882,7 +889,10 @@ body {
                                 }
 
                                 @media (max-width: 767px) {
+                                    width: 100px;
+                                    height: 30px;
                                     font-size: 18px;
+                                    padding-top: 4px;
                                 }
                             }
                         }
@@ -898,10 +908,16 @@ body {
 
                     .swiper-button-next {
                         right: 10px;
+                        @media (max-width: 767px) {
+                            right: 0px;
+                        }
                     }
 
                     .swiper-button-prev {
                         left: 10px;
+                        @media (max-width: 767px) {
+                            left: 0px;
+                        }
                     }
 
                     .swiper-pagination-bullet {
@@ -933,6 +949,12 @@ body {
                         height: 100%;
                         font-size: 72px;
                         color: #021494;
+                        @media (max-width: 767px) {
+                            font-size: 60px;
+                        }
+                        @media (max-width: 576px) {
+                            font-size: 48px;
+                        }
                     }
                 }
             }
