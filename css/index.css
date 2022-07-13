@@ -732,16 +732,16 @@ body main.syt-main .syt-adventage .syt-contact-link {
 
 @media (max-width: 991px) {
   body main.syt-main .syt-adventage .syt-contact-link {
-    height: 100px;
+    height: 120px;
     font-size: 24px;
-    padding-top: 15px;
+    padding-top: 20px;
   }
 }
 
 body main.syt-main .syt-adventage .syt-contact-link .contact-link-btn {
   width: 200px;
   height: 50px;
-  padding-top: 10px;
+  padding-top: 6px;
   border-radius: 25px;
   background-color: #f5d62a;
   color: #000000;
@@ -758,7 +758,7 @@ body main.syt-main .syt-adventage .syt-contact-link .contact-link-btn {
     width: 150px;
     height: 40px;
     font-size: 20px;
-    bottom: 10px;
+    bottom: 20px;
     left: calc(50% - 75px);
   }
 }
