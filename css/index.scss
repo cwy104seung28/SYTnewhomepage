@@ -849,10 +849,11 @@ body {
                                     padding: 7px 15px 5px;
                                     margin-right: 10px;
                                     margin-bottom: 10px;
-
+                                    @media (max-width: 1299px) {
+                                        margin-right: 5px;
+                                    }
                                     @media (max-width: 576px) {
                                         padding: 7px 10px 5px;
-                                        margin-right: 5px;
                                         margin-bottom: 5px;
                                         font-size: 14px;
                                     }
