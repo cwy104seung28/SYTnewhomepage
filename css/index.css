@@ -225,7 +225,7 @@ body main.syt-main .syt-banner .syt-text button {
   font-size: 26px;
   letter-spacing: 1px;
   margin-top: 30px;
-  border-radius: 10px;
+  border-radius: 100px;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
   white-space: nowrap;
@@ -507,17 +507,18 @@ body main.syt-main .syt-service .service-container .card .card-body .card-text {
 }
 
 body main.syt-main .syt-service .service-container .card .card-body a {
-  height: 50px;
-  display: inline;
+  width: 100px;
+  height: 40px;
+  display: block;
   bottom: 20px;
-  padding: 12px;
   font-size: 18px;
-  text-decoration: none;
-  border-radius: 10px;
+  text-align: center;
+  border-radius: 100px;
   background-color: #FFFFAC;
   color: #3b3b3b;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
+  padding-top: 8px;
 }
 
 body main.syt-main .syt-service .service-container .card .card-body a:hover {
@@ -961,7 +962,7 @@ body main.syt-main .syt-works .works-container .swiper .swiper-button-next {
 
 @media (max-width: 991px) {
   body main.syt-main .syt-works .works-container .swiper .swiper-button-next {
-    right: 15px;
+    right: 20px;
   }
 }
 
@@ -971,7 +972,7 @@ body main.syt-main .syt-works .works-container .swiper .swiper-button-prev {
 
 @media (max-width: 991px) {
   body main.syt-main .syt-works .works-container .swiper .swiper-button-prev {
-    left: 15px;
+    left: 20px;
   }
 }
 

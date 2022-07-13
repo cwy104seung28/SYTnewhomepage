@@ -1,3 +1,17 @@
+//ios系統不放大
+document.documentElement.addEventListener('touchstart', function (event) {
+  if (event.touches.length > 1) {
+    event.preventDefault();
+  }
+}, false);
+var lastTouchEnd = 0;
+document.documentElement.addEventListener('touchend', function (event) {
+  var now = Date.now();
+  if (now - lastTouchEnd <= 300) {
+    event.preventDefault();
+  }
+  lastTouchEnd = now;
+}, false);
 //字體
 (function (d) {
   var config = {
@@ -62,9 +76,6 @@ function setScroll() {
     scroll = $(window).scrollTop();
 
   var bannerCont = $("#banner").offset().top;
-  console.log(scroll);
-
-  console.log(bannerCont);
   if (scroll > bannerCont) {
     $(".syt-nav").addClass("change-nav");
     $(".navbar-collapse").addClass("nav-no-bg");
