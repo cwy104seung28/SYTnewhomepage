@@ -924,7 +924,7 @@ body main.syt-main .syt-works .works-container .swiper .swiper-slide .works-info
 
 @media (max-width: 576px) {
   body main.syt-main .syt-works .works-container .swiper .swiper-slide .works-info .works-content {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 
