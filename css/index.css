@@ -899,7 +899,7 @@ body main.syt-main .syt-works .works-container .swiper .swiper-slide .works-info
 
 @media (max-width: 1299px) {
   body main.syt-main .syt-works .works-container .swiper .swiper-slide .works-info .works-tags .tag {
-    margin-right: 5px;
+    margin-right: 4px;
   }
 }
 
