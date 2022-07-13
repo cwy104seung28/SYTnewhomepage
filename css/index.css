@@ -799,19 +799,13 @@ body main.syt-main .syt-works .works-container .swiper {
 @media (max-width: 991px) {
   body main.syt-main .syt-works .works-container .swiper {
     height: auto;
-    padding: 0px 50px 50px;
-  }
-}
-
-@media (max-width: 767px) {
-  body main.syt-main .syt-works .works-container .swiper {
-    padding: 0px 30px 30px;
+    padding: 0px 60px 50px;
   }
 }
 
 @media (max-width: 576px) {
   body main.syt-main .syt-works .works-container .swiper {
-    padding: 0px 20px 30px;
+    padding: 0px 50px 30px;
   }
 }
 
@@ -889,23 +883,23 @@ body main.syt-main .syt-works .works-container .swiper .swiper-slide .works-info
 }
 
 body main.syt-main .syt-works .works-container .swiper .swiper-slide .works-info .works-tags .tag {
-  background-color: #fbc514;
   color: #021494;
-  border-radius: 25px;
   padding: 7px 15px 5px;
   margin-right: 10px;
   margin-bottom: 10px;
+  outline: 1px solid #021494;
 }
 
 @media (max-width: 1299px) {
   body main.syt-main .syt-works .works-container .swiper .swiper-slide .works-info .works-tags .tag {
-    margin-right: 4px;
+    padding: 7px 10px 5px;
+    margin-right: 5px;
   }
 }
 
 @media (max-width: 576px) {
   body main.syt-main .syt-works .works-container .swiper .swiper-slide .works-info .works-tags .tag {
-    padding: 7px 10px 5px;
+    padding: 7px 7px 5px;
     margin-bottom: 5px;
     font-size: 14px;
   }
@@ -964,20 +958,8 @@ body main.syt-main .syt-works .works-container .swiper .swiper-button-next {
   right: 10px;
 }
 
-@media (max-width: 767px) {
-  body main.syt-main .syt-works .works-container .swiper .swiper-button-next {
-    right: 0px;
-  }
-}
-
 body main.syt-main .syt-works .works-container .swiper .swiper-button-prev {
   left: 10px;
-}
-
-@media (max-width: 767px) {
-  body main.syt-main .syt-works .works-container .swiper .swiper-button-prev {
-    left: 0px;
-  }
 }
 
 body main.syt-main .syt-works .works-container .swiper .swiper-pagination-bullet {
@@ -1031,7 +1013,7 @@ body main.syt-main .contact-service {
   position: fixed;
   z-index: 2;
   bottom: 50px;
-  right: 20px;
+  right: 10px;
 }
 
 body main.syt-main .contact-service .service-btn {

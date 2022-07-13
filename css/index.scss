@@ -782,14 +782,14 @@ body {
 
                     @media (max-width: 991px) {
                         height: auto;
-                        padding: 0px 50px 50px;
+                        padding: 0px 60px 50px;
                     }
-                    @media (max-width: 767px) {
+                    // @media (max-width: 767px) {
 
-                        padding: 0px 30px 30px;
-                    }
+                    //     padding: 0px 30px 30px;
+                    // }
                     @media (max-width: 576px) {
-                        padding: 0px 20px 30px;
+                        padding: 0px 50px 30px;
                     }
 
                     .swiper-wrapper {
@@ -843,17 +843,18 @@ body {
                                     justify-content: center;
                                 }
                                 .tag {
-                                    background-color: #fbc514;
                                     color: #021494;
-                                    border-radius: 25px;
+                                    // border-radius: 25px;
                                     padding: 7px 15px 5px;
                                     margin-right: 10px;
                                     margin-bottom: 10px;
+                                    outline: 1px solid #021494;
                                     @media (max-width: 1299px) {
-                                        margin-right: 4px;
+                                        padding: 7px 10px 5px;
+                                        margin-right: 5px;
                                     }
                                     @media (max-width: 576px) {
-                                        padding: 7px 10px 5px;
+                                        padding: 7px 7px 5px;
                                         margin-bottom: 5px;
                                         font-size: 14px;
                                     }
@@ -914,16 +915,16 @@ body {
 
                     .swiper-button-next {
                         right: 10px;
-                        @media (max-width: 767px) {
-                            right: 0px;
-                        }
+                        // @media (max-width: 767px) {
+                        //     right: 20px;
+                        // }
                     }
 
                     .swiper-button-prev {
                         left: 10px;
-                        @media (max-width: 767px) {
-                            left: 0px;
-                        }
+                        // @media (max-width: 767px) {
+                        //     left: 20px;
+                        // }
                     }
 
                     .swiper-pagination-bullet {
@@ -971,7 +972,7 @@ body {
             position: fixed;
             z-index: 2;
             bottom: 50px;
-            right: 20px;
+            right: 10px;
 
             .service-btn {
                 width: 60px;
