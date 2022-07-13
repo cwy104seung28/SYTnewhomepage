@@ -94,7 +94,9 @@ function setScroll() {
 }
 // swiper
 var swiper = new Swiper(".mySwiper", {
-  cssMode: true,
+  // cssMode: true,
+  centeredSlides: true,
+  spaceBetween: 70,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
@@ -102,9 +104,8 @@ var swiper = new Swiper(".mySwiper", {
   pagination: {
     el: ".swiper-pagination",
   },
-  mousewheel: true,
-  keyboard: true,
-  loop: true
+  loop: true,
+  clickable:true
 });
 
 function serviceBtn() {
