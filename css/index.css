@@ -733,7 +733,7 @@ body main.syt-main .syt-adventage .syt-contact-link {
 @media (max-width: 991px) {
   body main.syt-main .syt-adventage .syt-contact-link {
     height: 100px;
-    font-size: 18px;
+    font-size: 24px;
     padding-top: 15px;
   }
 }
