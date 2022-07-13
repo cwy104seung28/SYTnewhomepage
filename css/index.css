@@ -664,6 +664,7 @@ body main.syt-main .syt-adventage .adventage-container .adventage-card .adventag
   background-color: #0c57c9;
   margin: 0px auto 10px;
   padding: 10px;
+  white-space: nowrap;
 }
 
 @media (max-width: 767px) {
