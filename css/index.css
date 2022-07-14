@@ -404,6 +404,7 @@ body main.syt-main .syt-service {
 
 @media (max-width: 991px) {
   body main.syt-main .syt-service {
+    margin-bottom: 30px;
     height: auto;
   }
 }
@@ -412,6 +413,12 @@ body main.syt-main .syt-service .service-container h2 {
   color: #006cae;
   padding-top: 120px;
   margin-bottom: 50px;
+}
+
+@media (max-width: 991px) {
+  body main.syt-main .syt-service .service-container h2 {
+    padding-top: 80px;
+  }
 }
 
 body main.syt-main .syt-service .service-container h3 {
@@ -595,6 +602,12 @@ body main.syt-main .syt-adventage h2 {
   padding-top: 120px;
   margin-bottom: 20px;
   text-align: center;
+}
+
+@media (max-width: 991px) {
+  body main.syt-main .syt-adventage h2 {
+    padding-top: 80px;
+  }
 }
 
 body main.syt-main .syt-adventage h2,
@@ -786,6 +799,12 @@ body main.syt-main .syt-works h2 {
   color: #0060ae;
   padding-top: 120px;
   margin-bottom: 50px;
+}
+
+@media (max-width: 991px) {
+  body main.syt-main .syt-works h2 {
+    padding-top: 80px;
+  }
 }
 
 body main.syt-main .syt-works .container {

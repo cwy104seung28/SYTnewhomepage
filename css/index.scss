@@ -404,6 +404,7 @@ body {
             margin-bottom: 70px;
 
             @media (max-width: 991px) {
+                margin-bottom: 30px;
                 height: auto;
             }
 
@@ -413,6 +414,9 @@ body {
                     color: #006cae;
                     padding-top: 120px;
                     margin-bottom: 50px;
+                    @media (max-width: 991px) {
+                        padding-top: 80px;
+                    }
                 }
 
                 h3 {
@@ -602,6 +606,9 @@ body {
                 padding-top: 120px;
                 margin-bottom: 20px;
                 text-align: center;
+                @media (max-width: 991px) {
+                    padding-top: 80px;
+                }
             }
 
             h2,
@@ -771,6 +778,9 @@ body {
                 color: #0060ae;
                 padding-top: 120px;
                 margin-bottom: 50px;
+                @media (max-width: 991px) {
+                    padding-top: 80px;
+                }
             }
 
             .container {
