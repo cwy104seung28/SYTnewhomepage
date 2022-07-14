@@ -371,7 +371,7 @@ body main.syt-main .syt-banner .scroll-down {
   left: calc(50% - 85px);
   bottom: 30px;
   font-size: 24px;
-  text-shadow: rgba(0, 0, 0, 0.5) 5px 5px 5px;
+  text-shadow: rgba(0, 0, 0, 0.5) 3px 3px 3px;
 }
 
 @media (max-width: 991px) {
@@ -380,10 +380,17 @@ body main.syt-main .syt-banner .scroll-down {
   }
 }
 
+body main.syt-main .syt-banner .scroll-down img {
+  width: 60px;
+}
+
 body main.syt-main .syt-banner .scroll-down i {
+  position: absolute;
+  left: 19px;
+  bottom: 30px;
   display: block;
-  -webkit-animation: arrow-animation 1s infinite linear;
-          animation: arrow-animation 1s infinite linear;
+  -webkit-animation: arrow-animation 1s infinite;
+          animation: arrow-animation 1s infinite;
 }
 
 body main.syt-main .syt-service {
@@ -392,7 +399,7 @@ body main.syt-main .syt-service {
   transition: 0.5s ease-in-out;
   position: relative;
   color: #000;
-  margin-bottom: 30px;
+  margin-bottom: 70px;
 }
 
 @media (max-width: 991px) {
@@ -403,7 +410,7 @@ body main.syt-main .syt-service {
 
 body main.syt-main .syt-service .service-container h2 {
   color: #006cae;
-  padding-top: 100px;
+  padding-top: 120px;
   margin-bottom: 50px;
 }
 
@@ -430,7 +437,7 @@ body main.syt-main .syt-service .service-container p {
 
 body main.syt-main .syt-service .service-container .card {
   position: relative;
-  height: 60vh;
+  height: 62.5vh;
   -webkit-transition: -webkit-transform .5s linear;
   transition: -webkit-transform .5s linear;
   transition: transform .5s linear;
@@ -585,7 +592,7 @@ body main.syt-main .syt-adventage {
 }
 
 body main.syt-main .syt-adventage h2 {
-  padding-top: 100px;
+  padding-top: 120px;
   margin-bottom: 20px;
   text-align: center;
 }
@@ -733,7 +740,7 @@ body main.syt-main .syt-adventage .syt-contact-link {
 @media (max-width: 991px) {
   body main.syt-main .syt-adventage .syt-contact-link {
     height: 120px;
-    font-size: 24px;
+    font-size: 20px;
     padding-top: 20px;
   }
 }
@@ -757,9 +764,9 @@ body main.syt-main .syt-adventage .syt-contact-link .contact-link-btn {
   body main.syt-main .syt-adventage .syt-contact-link .contact-link-btn {
     width: 150px;
     height: 40px;
-    font-size: 20px;
+    font-size: 18px;
     bottom: 20px;
-    padding-top: 6px;
+    padding-top: 8px;
     left: calc(50% - 75px);
   }
 }
@@ -777,7 +784,7 @@ body main.syt-main .syt-adventage .syt-contact-link .contact-link-btn:hover {
 
 body main.syt-main .syt-works h2 {
   color: #0060ae;
-  padding-top: 100px;
+  padding-top: 120px;
   margin-bottom: 50px;
 }
 
@@ -861,12 +868,13 @@ body main.syt-main .syt-works .works-container .swiper .swiper-slide .works-pic 
 }
 
 body main.syt-main .syt-works .works-container .swiper .swiper-slide .works-info {
-  padding: 20px 35px 20px 20px;
+  padding: 20px 25px 20px 35px;
 }
 
 @media (max-width: 991px) {
   body main.syt-main .syt-works .works-container .swiper .swiper-slide .works-info {
     text-align: center;
+    padding: 15px 10px;
   }
 }
 

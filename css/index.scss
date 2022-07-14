@@ -374,16 +374,23 @@ body {
                 left: calc(50% - 85px);
                 bottom: 30px;
                 font-size: 24px;
-                text-shadow: rgba(0, 0, 0, 0.5)5px 5px 5px;
-
+                text-shadow: rgba(0, 0, 0, 0.5)3px 3px 3px;
+                // svg{
+                //     box-shadow: rgba(0, 0, 0, 0.5)5px 5px 5px;
+                // }
                 // animation: scroll-down-animation 2s infinite linear;
                 @media (max-width: 991px) {
                     display: none;
                 }
-
+                img{
+                    width: 60px;
+                }
                 i {
+                    position: absolute;
+                    left: 19px;
+                    bottom: 30px;
                     display: block;
-                    animation: arrow-animation 1s infinite linear;
+                    animation: arrow-animation 1s infinite ;
                 }
             }
         }
@@ -394,7 +401,7 @@ body {
             transition: 0.5s ease-in-out;
             position: relative;
             color: #000;
-            margin-bottom: 30px;
+            margin-bottom: 70px;
 
             @media (max-width: 991px) {
                 height: auto;
@@ -404,7 +411,7 @@ body {
 
                 h2 {
                     color: #006cae;
-                    padding-top: 100px;
+                    padding-top: 120px;
                     margin-bottom: 50px;
                 }
 
@@ -428,7 +435,7 @@ body {
 
                 .card {
                     position: relative;
-                    height: 60vh;
+                    height: 62.5vh;
                     transition: transform .5s linear;
 
                     // @media (max-width:1299px) {
@@ -592,7 +599,7 @@ body {
             // background-color: rgba(255, 255, 255, 0.6);
 
             h2 {
-                padding-top: 100px;
+                padding-top: 120px;
                 margin-bottom: 20px;
                 text-align: center;
             }
@@ -716,7 +723,7 @@ body {
 
                 @media (max-width: 991px) {
                     height: 120px;
-                    font-size: 24px;
+                    font-size: 20px;
                     padding-top: 20px;
                 }
 
@@ -739,9 +746,9 @@ body {
                     @media (max-width: 991px) {
                         width: 150px;
                         height: 40px;
-                        font-size: 20px;
+                        font-size: 18px;
                         bottom: 20px;
-                        padding-top: 6px;
+                        padding-top: 8px;
                         left: calc(50% - 75px);
                     }
 
@@ -755,7 +762,6 @@ body {
         }
 
         .syt-works {
-
             // background-color: #b8c7e6;
             @media (max-width: 991px) {
                 height: auto;
@@ -763,7 +769,7 @@ body {
 
             h2 {
                 color: #0060ae;
-                padding-top: 100px;
+                padding-top: 120px;
                 margin-bottom: 50px;
             }
 
@@ -837,10 +843,11 @@ body {
                         }
 
                         .works-info {
-                            padding: 20px 35px 20px 20px;
+                            padding: 20px 25px 20px 35px;
 
                             @media (max-width: 991px) {
                                 text-align: center;
+                                padding: 15px 10px;
                             }
 
                             .works-tags {
