@@ -389,8 +389,8 @@ body main.syt-main .syt-banner .scroll-down i {
   left: 19px;
   bottom: 30px;
   display: block;
-  -webkit-animation: arrow-animation 1s infinite;
-          animation: arrow-animation 1s infinite;
+  -webkit-animation: arrow-animation 1s infinite linear;
+          animation: arrow-animation 1s infinite linear;
 }
 
 body main.syt-main .syt-service {
@@ -799,6 +799,7 @@ body main.syt-main .syt-works h2 {
   color: #0060ae;
   padding-top: 120px;
   margin-bottom: 50px;
+  text-align: center;
 }
 
 @media (max-width: 991px) {
@@ -1226,7 +1227,7 @@ body main.syt-main .contact-service .service-icon .service-icon-ul .service-icon
 
 body footer.syt-footer {
   background-color: #fafbfd;
-  padding: 60px;
+  padding: 30px 20px 20px;
   font-weight: 300;
 }
 

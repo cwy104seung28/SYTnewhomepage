@@ -390,7 +390,7 @@ body {
                     left: 19px;
                     bottom: 30px;
                     display: block;
-                    animation: arrow-animation 1s infinite ;
+                    animation: arrow-animation 1s infinite linear;
                 }
             }
         }
@@ -778,6 +778,7 @@ body {
                 color: #0060ae;
                 padding-top: 120px;
                 margin-bottom: 50px;
+                text-align: center;
                 @media (max-width: 991px) {
                     padding-top: 80px;
                 }
@@ -1163,7 +1164,7 @@ body {
 
     footer.syt-footer {
         background-color: #fafbfd;
-        padding: 60px;
+        padding: 30px 20px 20px;
         font-weight: 300;
 
         .footer-flex {
