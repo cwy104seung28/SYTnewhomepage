@@ -859,6 +859,10 @@ body {
                                 text-align: center;
                                 padding: 15px 10px;
                             }
+                            @media (max-width: 576px) {
+                                text-align: center;
+                                padding: 10px 0px;
+                            }
 
                             .works-tags {
                                 display: flex;
@@ -883,7 +887,7 @@ body {
                                     }
 
                                     @media (max-width: 576px) {
-                                        padding: 7px 7px 5px;
+                                        padding: 5px 5px 5px;
                                         margin-bottom: 5px;
                                         font-size: 14px;
                                     }
