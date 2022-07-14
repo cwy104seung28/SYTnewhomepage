@@ -1050,9 +1050,10 @@ body {
                         width: 400px;
                         opacity: 1;
                         background-color: #FFFFFF;
-                        margin: auto;
+                        
                         @media (max-width: 1199px) {
                             width: 400px;
+                            margin: auto;
                             margin-bottom: 20px;
                         }
                         @media (max-width: 991px) {
