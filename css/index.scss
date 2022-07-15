@@ -499,7 +499,7 @@ body {
                         position: absolute;
                         bottom: 0px;
                         text-align: left;
-                        background-color: #0000008e;
+                        background-color: #171a2c8e;
                         padding: 20px;
                         border-bottom-left-radius: .25rem;
                         border-bottom-right-radius: .25rem;
@@ -884,12 +884,12 @@ body {
                                 }
 
                                 .tag {
-                                    color: #021494;
+                                    color: #5e5e5e;
                                     // border-radius: 25px;
                                     padding: 7px 15px 5px;
                                     margin-right: 10px;
                                     margin-bottom: 10px;
-                                    outline: 1px solid #021494;
+                                    outline: 1px solid #5e5e5e;
 
                                     @media (max-width: 1299px) {
                                         padding: 7px 10px 5px;
@@ -908,7 +908,10 @@ body {
                                 color: #000000;
                                 padding-top: 0px;
                                 margin-bottom: 10px;
-
+                                text-align: left;
+                                @media (max-width: 991px) {
+                                    text-align: center;
+                                }
                                 @media (max-width: 576px) {
                                     font-size: 20px;
                                 }
@@ -1017,21 +1020,31 @@ body {
         }
 
         .syt-contact {
-            background-color: #021494;
+            background-image: linear-gradient(90deg, #202c88 45%, #ffffff 45%);
+            // background-color: #202c88;
             padding: 50px 0px;
+            @media (max-width:1199px) {
+                // background-image:none;
+                // background-color: #202c88;
 
+                background-image: linear-gradient(180deg, #202c88 28%, #ffffff 28%);
+            }
+            @media (max-width:767px) {
+                background-image: linear-gradient(180deg, #202c88 25%, #ffffff 25%);
+            }
             .contact-container {
                 display: flex;
                 align-items: center;
                 padding-top: 100px;
                 flex-wrap: wrap;
+                margin-bottom: 40px;
                 @media (max-width: 991px) {
-                    padding-top: 80px;
+                    padding-top: 50px;
                 }
                 .contact-text {
                     @media (max-width: 1199px) {
                         text-align: center;
-                        margin-bottom: 20px;
+                        margin-bottom: 70px;
                     }
                     img {
                         width: 400px;
@@ -1091,7 +1104,13 @@ body {
                     color: #575757;
                     background-color: #FFFFFF;
                     border-radius: 30px;
-                    margin: auto;
+                    margin-left: auto;
+                    // margin-left: 30px;
+                    outline: #5c5c5c 1px solid;
+                    @media (max-width:1199px) {
+                        margin: auto;
+                        margin-top: 30px;
+                    }
                     .form-content {
                         background-color: #8e8e8e;
                         color: #FFFFFF;
@@ -1120,14 +1139,40 @@ body {
 
                             input[type=text],
                             [type=number] {
-                                width: 100%;
+                                height: 40px;
+                                width: 84%;
                                 border-radius: 10px;
                                 border: #8e8e8e 1px solid;
+                                @media (max-width:1824px) {
+                                    width: 82%;
+                                }
+                                @media (max-width:1636px) {
+                                    width: 80%;
+                                }
+                                @media (max-width:1495px) {
+                                    width: 78%;
+                                }
+                                @media (max-width:1380px) {
+                                    width: 75%;
+                                }
+                                @media (max-width:1199px) {
+                                    width: 84%;
+                                }
+                                @media (max-width:767px) {
+                                    width: 100%;
+                                }
                             }
-
+                            input[type=checkbox]{
+                                cursor: pointer;
+                                label{
+                                    cursor: pointer;
+                                }
+                                
+                            }
                             textarea {
                                 width: 100%;
-                                height: 150px;
+                                height: 100px;
+                                resize: none;
                             }
 
                         }
@@ -1135,28 +1180,31 @@ body {
                         .send {
                             display: flex;
                             justify-content: right;
-                            .reset {
-                                width: 100px;
-                                height: 40px;
-                                background-color: #8e8e8e;
-                                color: #FFFFFF;
-                                margin-right: 20px;
-                                border-radius: 100px;
-                                transition: 0.5s ease-in-out;
-                                &:hover{
-                                    outline: #8e8e8e 1px solid;
-                                    background-color: #FFFFFF;
-                                    color: #8e8e8e;
-                                }
-                            }
+                            // .reset {
+                            //     width: 100px;
+                            //     height: 40px;
+                            //     background-color: #8e8e8e;
+                            //     color: #FFFFFF;
+                            //     margin-right: 20px;
+                            //     border-radius: 100px;
+                            //     transition: 0.5s ease-in-out;
+                            //     &:hover{
+                            //         outline: #8e8e8e 1px solid;
+                            //         background-color: #FFFFFF;
+                            //         color: #8e8e8e;
+                            //     }
+                            // }
 
                             .submit {
-                                width: 100px;
-                                height: 40px;
+                                // width: 100px;
+                                // height: 40px;
+
+                                padding: 15px 30px;
                                 background-color: #021494;
                                 color: #FFFFFF;
                                 border-radius: 100px;
                                 transition: 0.5s ease-in-out;
+                                font-size: 20px;
                                 &:hover{
                                     outline: #021494 1px solid;
                                     background-color: #FFFFFF;
