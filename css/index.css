@@ -928,6 +928,7 @@ body main.syt-main .syt-works .works-container .swiper .swiper-slide .works-info
   margin-right: 10px;
   margin-bottom: 10px;
   outline: 1px solid #5e5e5e;
+  font-size: 16px;
 }
 
 @media (max-width: 1299px) {
@@ -1296,11 +1297,7 @@ body main.syt-main .syt-contact .contact-container .contact-form form div [type=
   }
 }
 
-body main.syt-main .syt-contact .contact-container .contact-form form div input[type=checkbox] {
-  cursor: pointer;
-}
-
-body main.syt-main .syt-contact .contact-container .contact-form form div input[type=checkbox] label {
+body main.syt-main .syt-contact .contact-container .contact-form form div label[for=system], body main.syt-main .syt-contact .contact-container .contact-form form div [for=website], body main.syt-main .syt-contact .contact-container .contact-form form div [for=app] {
   cursor: pointer;
 }
 
