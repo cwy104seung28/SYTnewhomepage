@@ -217,7 +217,7 @@ body main.syt-main .syt-banner .syt-text {
   }
 }
 
-body main.syt-main .syt-banner .syt-text button {
+body main.syt-main .syt-banner .syt-text a {
   width: 200px;
   height: 50px;
   background-color: #FBD914;
@@ -229,17 +229,17 @@ body main.syt-main .syt-banner .syt-text button {
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
   white-space: nowrap;
+  padding: 12px 20px;
 }
 
 @media (max-width: 1299px) {
-  body main.syt-main .syt-banner .syt-text button {
+  body main.syt-main .syt-banner .syt-text a {
     margin-top: 30px;
   }
 }
 
 @media (max-width: 991px) {
-  body main.syt-main .syt-banner .syt-text button {
-    padding-top: 0px;
+  body main.syt-main .syt-banner .syt-text a {
     margin-top: 10px;
     width: 150px;
     height: 40px;
@@ -250,27 +250,27 @@ body main.syt-main .syt-banner .syt-text button {
 }
 
 @media (max-width: 575px) {
-  body main.syt-main .syt-banner .syt-text button {
+  body main.syt-main .syt-banner .syt-text a {
     font-size: 18px;
   }
 }
 
-body main.syt-main .syt-banner .syt-text button:hover {
+body main.syt-main .syt-banner .syt-text a:hover {
   -webkit-transform: translateY(-10px);
           transform: translateY(-10px);
 }
 
-body main.syt-main .syt-banner .syt-text button img {
+body main.syt-main .syt-banner .syt-text a img {
   width: 40px;
 }
 
 @media (max-width: 991px) {
-  body main.syt-main .syt-banner .syt-text button img {
+  body main.syt-main .syt-banner .syt-text a img {
     width: 30px;
   }
 }
 
-body main.syt-main .syt-banner .syt-text button .more-img-hover {
+body main.syt-main .syt-banner .syt-text a .more-img-hover {
   display: none;
 }
 
@@ -307,6 +307,7 @@ body main.syt-main .syt-banner .syt-text .syt-title {
 body main.syt-main .syt-banner .syt-text .syt-content {
   font-size: 55px;
   color: #FBD914;
+  margin-bottom: 20px;
 }
 
 @media (max-width: 1299px) {
@@ -325,6 +326,10 @@ body main.syt-main .syt-banner .syt-text .syt-content {
   body main.syt-main .syt-banner .syt-text .syt-content {
     font-size: 20px;
   }
+}
+
+body main.syt-main .syt-banner .syt-text .more-btn {
+  margin-right: 10px;
 }
 
 body main.syt-main .syt-banner #fade {
