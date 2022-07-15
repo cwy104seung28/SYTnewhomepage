@@ -1527,6 +1527,12 @@ body footer.syt-footer {
   font-weight: 300;
 }
 
+@media (max-width: 767px) {
+  body footer.syt-footer {
+    padding: 20px 5px 10px;
+  }
+}
+
 body footer.syt-footer .footer-flex {
   width: 100%;
   display: -webkit-box;
