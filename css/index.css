@@ -1373,6 +1373,7 @@ body main.syt-main .contact-service {
 body main.syt-main .contact-service .service-btn {
   width: 60px;
   height: 60px;
+  display: inline-block;
   background-color: #e69d00;
   color: #FFFFFF;
   font-size: 28px;
@@ -1380,6 +1381,8 @@ body main.syt-main .contact-service .service-btn {
   border-radius: 50%;
   -webkit-box-shadow: 0px 0px 5px #0000006b;
           box-shadow: 0px 0px 5px #0000006b;
+  padding: 10px;
+  cursor: pointer;
 }
 
 @media (max-width: 767px) {
@@ -1523,6 +1526,12 @@ body main.syt-main .contact-service .service-icon .service-icon-ul .service-icon
   }
   body main.syt-main .contact-service .service-icon .service-icon-ul .service-icon-li .line-icon:hover .line-img-hover {
     display: block;
+  }
+}
+
+@media (max-width: 1199px) {
+  body main.syt-main .contact-service .service-icon .service-icon-ul .service-icon-li .phone-icon {
+    display: none;
   }
 }
 
@@ -1705,6 +1714,13 @@ body .active .email-icon {
 }
 
 body .active .phone-icon {
+  -webkit-transform: translateX(-100px) !important;
+          transform: translateX(-100px) !important;
+  -webkit-transition: 0.5s ease-in-out !important;
+  transition: 0.5s ease-in-out !important;
+}
+
+body .active .phone-icon-phone {
   -webkit-transform: translateX(-100px) !important;
           transform: translateX(-100px) !important;
   -webkit-transition: 0.5s ease-in-out !important;

@@ -1,17 +1,25 @@
 //ios系統不放大
-document.documentElement.addEventListener('touchstart', function (event) {
-  if (event.touches.length > 1) {
-    event.preventDefault();
-  }
-}, false);
+document.documentElement.addEventListener(
+  "touchstart",
+  function (event) {
+    if (event.touches.length > 1) {
+      event.preventDefault();
+    }
+  },
+  false
+);
 var lastTouchEnd = 0;
-document.documentElement.addEventListener('touchend', function (event) {
-  var now = Date.now();
-  if (now - lastTouchEnd <= 300) {
-    event.preventDefault();
-  }
-  lastTouchEnd = now;
-}, false);
+document.documentElement.addEventListener(
+  "touchend",
+  function (event) {
+    var now = Date.now();
+    if (now - lastTouchEnd <= 300) {
+      event.preventDefault();
+    }
+    lastTouchEnd = now;
+  },
+  false
+);
 //字體
 (function (d) {
   var config = {
@@ -106,11 +114,42 @@ var swiper = new Swiper(".mySwiper", {
     clickable: true,
   },
   loop: true,
-  clickable:true
+  clickable: true,
 });
 
-function serviceBtn() {
-  $(".service-icon-ul").toggleClass("active");
-}
+// function serviceBtn() {
+//   $(".service-icon-ul").toggleClass("active");
+// }
 
-
+//vue
+const vueApp = new Vue({
+  data() {
+    return {
+      worksItem: [
+        {
+          workImg: "./img/work-sample.png",
+          // workTags: ["營造業", "零售業", "製造業", "一般企業"],
+          workTitle: "物料管理",
+          workContent:"垂直整合物料系統、請購單、採購單、進貨單，將採購流程系統化，一手輕鬆掌握採購進度。",
+        },
+        {
+          workImg: "./img/work-sample.png",
+          // workTags: ["營造業", "零售業", "製造業", "一般企業"],
+          workTitle: "物料管理",
+          workContent:"垂直整合物料系統、請購單、採購單、進貨單，將採購流程系統化，一手輕鬆掌握採購進度。",
+        },
+        {
+          workImg: "./img/work-sample.png",
+          // workTags: ["營造業", "零售業", "製造業", "一般企業"],
+          workTitle: "物料管理",
+          workContent:"垂直整合物料系統、請購單、採購單、進貨單，將採購流程系統化，一手輕鬆掌握採購進度。",
+        },
+      ],
+    };
+  },
+  methods: {
+    serviceBtn() {
+      $(".service-icon-ul").toggleClass("active");
+    },
+  },
+}).$mount("#vueapp");

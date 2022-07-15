@@ -1237,6 +1237,7 @@ body {
             .service-btn {
                 width: 60px;
                 height: 60px;
+                display: inline-block;
                 background-color: #e69d00;
                 color: #FFFFFF;
                 font-size: 28px;
@@ -1244,6 +1245,10 @@ body {
                 border-radius: 50%;
 
                 box-shadow: 0px 0px 5px #0000006b;
+
+                padding: 10px;
+
+                cursor: pointer;
 
                 @media (max-width:767px) {
                     width: 50px;
@@ -1376,6 +1381,19 @@ body {
                                 }
                             }
                         }
+                        // .phone-icon{
+                        //     @media (max-width:1199px) {
+                        //         display: none;
+                        //     }
+                            
+                        // }
+                        // .phone-icon-phone{
+                        //     display: none;
+                        //     @media (max-width:1199px) {
+                        //         display: block;
+                        //     }
+                            
+                        // }
                     }
 
                 }
@@ -1528,6 +1546,10 @@ body {
         }
 
         .phone-icon {
+            transform: translateX(-100px) !important;
+            transition: 0.5s ease-in-out !important;
+        }
+        .phone-icon-phone {
             transform: translateX(-100px) !important;
             transition: 0.5s ease-in-out !important;
         }
