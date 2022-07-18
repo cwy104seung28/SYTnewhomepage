@@ -281,8 +281,15 @@ body main.syt-main .syt-banner .container .syt-text a {
 }
 
 body main.syt-main .syt-banner .container .syt-text a:hover {
-  -webkit-transform: translateX(-20px) translateY(-10px) !important;
-          transform: translateX(-20px) translateY(-10px) !important;
+  -webkit-transform: translateY(-10px) !important;
+          transform: translateY(-10px) !important;
+}
+
+@media (max-width: 575px) {
+  body main.syt-main .syt-banner .container .syt-text a:hover {
+    -webkit-transform: translateX(-20px) translateY(-10px) !important;
+            transform: translateX(-20px) translateY(-10px) !important;
+  }
 }
 
 body main.syt-main .syt-banner .container .syt-text a img {
@@ -1097,6 +1104,10 @@ body main.syt-main .syt-works .works-container .swiper .swiper-button-prev i {
   }
 }
 
+body main.syt-main .container {
+  max-width: 80%;
+}
+
 body main.syt-main .syt-contact {
   background-image: url("../img/contact-bg.png");
   background-position: 0%;
@@ -1742,7 +1753,7 @@ body .active .phone-icon-phone {
 
 body .phone-active {
   width: 200px !important;
-  height: 200px !important;
+  height: 150px !important;
   border-radius: 20px !important;
   -webkit-box-align: start !important;
       -ms-flex-align: start !important;

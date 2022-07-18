@@ -279,8 +279,10 @@ body {
                         }
 
                         &:hover {
-                            transform: translateX(-20px) translateY(-10px) !important;
-
+                            transform: translateY(-10px) !important;
+                            @media (max-width:575px) {
+                                transform: translateX(-20px) translateY(-10px) !important;
+                            }
                         }
 
                         img {
@@ -1094,7 +1096,9 @@ body {
             }
 
         }
-
+        .container{
+            max-width: 80%;
+        }
         .syt-contact {
             background-image: url("../img/contact-bg.png");
             background-position: 0%;
@@ -1709,7 +1713,7 @@ body {
 
     .phone-active {
         width: 200px !important;
-        height: 200px !important;
+        height: 150px !important;
         border-radius: 20px !important;
         align-items: flex-start !important;
         padding: 10px !important;
