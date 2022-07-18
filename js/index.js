@@ -101,21 +101,21 @@ function setScroll() {
   }
 }
 // swiper
-var swiper = new Swiper(".mySwiper", {
-  // cssMode: true,
-  centeredSlides: true,
-  spaceBetween: 70,
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  loop: true,
-  clickable: true,
-});
+// var swiper = new Swiper(".mySwiper", {
+//   // cssMode: true,
+//   centeredSlides: true,
+//   spaceBetween: 70,
+//   navigation: {
+//     nextEl: ".swiper-button-next",
+//     prevEl: ".swiper-button-prev",
+//   },
+//   pagination: {
+//     el: ".swiper-pagination",
+//     clickable: true,
+//   },
+//   loop: true,
+//   clickable: true,
+// });
 
 // function serviceBtn() {
 //   $(".service-icon-ul").toggleClass("active");
@@ -152,4 +152,22 @@ const vueApp = new Vue({
       $(".service-icon-ul").toggleClass("active");
     },
   },
+  mounted() {
+    var swiper = new Swiper(".mySwiper", {
+      // cssMode: true,
+      centeredSlides: true,
+      spaceBetween: 70,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      loop: true,
+      clickable: true,
+    });
+
+},
 }).$mount("#vueapp");

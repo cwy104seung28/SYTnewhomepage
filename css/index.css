@@ -224,12 +224,12 @@ body main.syt-main .syt-banner .syt-text a {
   color: #000000;
   font-size: 26px;
   letter-spacing: 1px;
-  margin-top: 30px;
   border-radius: 100px;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
   white-space: nowrap;
-  padding: 12px 20px;
+  padding: 8px 20px;
+  display: inline-block;
 }
 
 @media (max-width: 1299px) {
@@ -256,8 +256,8 @@ body main.syt-main .syt-banner .syt-text a {
 }
 
 body main.syt-main .syt-banner .syt-text a:hover {
-  -webkit-transform: translateY(-10px);
-          transform: translateY(-10px);
+  -webkit-transform: translateY(-10px) !important;
+          transform: translateY(-10px) !important;
 }
 
 body main.syt-main .syt-banner .syt-text a img {
@@ -518,7 +518,7 @@ body main.syt-main .syt-service .service-container .card .card-body {
 
 body main.syt-main .syt-service .service-container .card .card-body .card-text {
   height: 70px;
-  color: #FFFFAC;
+  color: #FBD914;
 }
 
 @media (max-width: 991px) {
@@ -528,14 +528,14 @@ body main.syt-main .syt-service .service-container .card .card-body .card-text {
 }
 
 body main.syt-main .syt-service .service-container .card .card-body a {
-  width: 100px;
+  width: 120px;
   height: 40px;
   display: block;
   bottom: 20px;
   font-size: 18px;
   text-align: center;
   border-radius: 100px;
-  background-color: #FFFFAC;
+  background-color: #FBD914;
   color: #3b3b3b;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
@@ -551,6 +551,10 @@ body main.syt-main .syt-service .service-container .card .card-body a:hover {
   body main.syt-main .syt-service .service-container .card .card-body a {
     display: inline-block;
   }
+}
+
+body main.syt-main .syt-service .service-container .card .card-body a i {
+  margin-left: 5px;
 }
 
 body main.syt-main .syt-service .service-container #card-1 {
@@ -792,6 +796,10 @@ body main.syt-main .syt-adventage .syt-contact-link .contact-link-btn {
 body main.syt-main .syt-adventage .syt-contact-link .contact-link-btn:hover {
   color: #f5d62a;
   background-color: #000000;
+}
+
+body main.syt-main .syt-adventage .syt-contact-link .contact-link-btn i {
+  margin-left: 5px;
 }
 
 @media (max-width: 991px) {
@@ -1230,7 +1238,7 @@ body main.syt-main .syt-contact .contact-container .contact-form {
   background-color: #FFFFFF;
   border-radius: 30px;
   margin-left: auto;
-  outline: #5c5c5c 1px solid;
+  border: #5c5c5c 1px solid;
 }
 
 @media (max-width: 1199px) {
@@ -1331,17 +1339,9 @@ body main.syt-main .syt-contact .contact-container .contact-form form .send {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: right;
-      -ms-flex-pack: right;
-          justify-content: right;
-}
-
-@media (max-width: 1199px) {
-  body main.syt-main .syt-contact .contact-container .contact-form form .send {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 body main.syt-main .syt-contact .contact-container .contact-form form .send .submit {
@@ -1526,12 +1526,6 @@ body main.syt-main .contact-service .service-icon .service-icon-ul .service-icon
   }
   body main.syt-main .contact-service .service-icon .service-icon-ul .service-icon-li .line-icon:hover .line-img-hover {
     display: block;
-  }
-}
-
-@media (max-width: 1199px) {
-  body main.syt-main .contact-service .service-icon .service-icon-ul .service-icon-li .phone-icon {
-    display: none;
   }
 }
 
