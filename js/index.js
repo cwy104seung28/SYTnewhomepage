@@ -100,74 +100,75 @@ function setScroll() {
     $(".navbar-toggler").css("outline", "#223e72 2px solid");
   }
 }
-// swiper
-// var swiper = new Swiper(".mySwiper", {
-//   // cssMode: true,
-//   centeredSlides: true,
-//   spaceBetween: 70,
-//   navigation: {
-//     nextEl: ".swiper-button-next",
-//     prevEl: ".swiper-button-prev",
-//   },
-//   pagination: {
-//     el: ".swiper-pagination",
-//     clickable: true,
-//   },
-//   loop: true,
-//   clickable: true,
-// });
 
-// function serviceBtn() {
-//   $(".service-icon-ul").toggleClass("active");
-// }
+// swiper
+var swiper = new Swiper(".mySwiper", {
+  // cssMode: true,
+  centeredSlides: true,
+  spaceBetween: 70,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  loop: true,
+  clickable: true,
+});
+
+function serviceBtn() {
+  $(".service-icon-ul").toggleClass("active");
+}
 
 //vue
-const vueApp = new Vue({
-  data() {
-    return {
-      worksItem: [
-        {
-          workImg: "./img/work-sample.png",
-          // workTags: ["營造業", "零售業", "製造業", "一般企業"],
-          workTitle: "物料管理",
-          workContent:"垂直整合物料系統、請購單、採購單、進貨單，將採購流程系統化，一手輕鬆掌握採購進度。",
-        },
-        {
-          workImg: "./img/work-sample.png",
-          // workTags: ["營造業", "零售業", "製造業", "一般企業"],
-          workTitle: "物料管理",
-          workContent:"垂直整合物料系統、請購單、採購單、進貨單，將採購流程系統化，一手輕鬆掌握採購進度。",
-        },
-        {
-          workImg: "./img/work-sample.png",
-          // workTags: ["營造業", "零售業", "製造業", "一般企業"],
-          workTitle: "物料管理",
-          workContent:"垂直整合物料系統、請購單、採購單、進貨單，將採購流程系統化，一手輕鬆掌握採購進度。",
-        },
-      ],
-    };
-  },
-  methods: {
-    serviceBtn() {
-      $(".service-icon-ul").toggleClass("active");
-    },
-  },
-  mounted() {
-    var swiper = new Swiper(".mySwiper", {
-      // cssMode: true,
-      centeredSlides: true,
-      spaceBetween: 70,
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      loop: true,
-      clickable: true,
-    });
+// const vueApp = new Vue({
+//   data() {
+//     return {
+//       worksItem: [
+//         {
+//           workImg: "./img/work-sample.png",
+//           // workTags: ["營造業", "零售業", "製造業", "一般企業"],
+//           workTitle: "物料管理",
+//           workContent:"垂直整合物料系統、請購單、採購單、進貨單，將採購流程系統化，一手輕鬆掌握採購進度。",
+//         },
+//         {
+//           workImg: "./img/work-sample.png",
+//           // workTags: ["營造業", "零售業", "製造業", "一般企業"],
+//           workTitle: "物料管理",
+//           workContent:"垂直整合物料系統、請購單、採購單、進貨單，將採購流程系統化，一手輕鬆掌握採購進度。",
+//         },
+//         {
+//           workImg: "./img/work-sample.png",
+//           // workTags: ["營造業", "零售業", "製造業", "一般企業"],
+//           workTitle: "物料管理",
+//           workContent:"垂直整合物料系統、請購單、採購單、進貨單，將採購流程系統化，一手輕鬆掌握採購進度。",
+//         },
+//       ],
+//     };
+//   },
+//   methods: {
+//     serviceBtn() {
+//       $(".service-icon-ul").toggleClass("active");
+//     },
+//   },
+//   mounted() {
+//     var swiper = new Swiper(".mySwiper", {
+//       // cssMode: true,
+//       centeredSlides: true,
+//       spaceBetween: 70,
+//       navigation: {
+//         nextEl: ".swiper-button-next",
+//         prevEl: ".swiper-button-prev",
+//       },
+//       pagination: {
+//         el: ".swiper-pagination",
+//         clickable: true,
+//       },
+//       loop: true,
+//       clickable: true,
+//     });
 
-},
-}).$mount("#vueapp");
+// },
+// }).$mount("#vueapp");
