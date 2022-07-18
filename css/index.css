@@ -544,7 +544,7 @@ body main.syt-main .syt-service .service-container .card .card-body a {
 
 body main.syt-main .syt-service .service-container .card .card-body a:hover {
   background-color: #3b3b3b;
-  color: #f4f884;
+  color: #FBD914;
 }
 
 @media (max-width: 991px) {
