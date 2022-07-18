@@ -92,6 +92,12 @@ body nav.syt-nav .container-fluid ul li .nav-link {
   transition: 0.5s ease-in-out;
 }
 
+@media (max-width: 1199px) {
+  body nav.syt-nav .container-fluid ul li .nav-link {
+    padding: 10px 15px;
+  }
+}
+
 @media (max-width: 991px) {
   body nav.syt-nav .container-fluid ul li .nav-link {
     padding: 15px 10px;
@@ -178,7 +184,7 @@ body main.syt-main .syt-banner {
   position: relative;
   width: 100%;
   height: 100vh;
-  background-image: url("../img/banner-img.png");
+  background-image: url("../img/banner-img-2.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -431,22 +437,6 @@ body main.syt-main .syt-service .service-container h3 {
   font-weight: 600;
 }
 
-body main.syt-main .syt-service .service-container p {
-  font-size: 20px;
-}
-
-@media (max-width: 1436px) {
-  body main.syt-main .syt-service .service-container p {
-    font-size: 18px;
-  }
-}
-
-@media (max-width: 991px) {
-  body main.syt-main .syt-service .service-container p {
-    font-size: 16px;
-  }
-}
-
 body main.syt-main .syt-service .service-container .card {
   position: relative;
   height: 62.5vh;
@@ -514,6 +504,12 @@ body main.syt-main .syt-service .service-container .card .card-body {
   body main.syt-main .syt-service .service-container .card .card-body {
     padding: 10px;
   }
+}
+
+body main.syt-main .syt-service .service-container .card .card-body .card-title {
+  color: #FFFFFF;
+  padding-top: 0px;
+  margin-bottom: 10px;
 }
 
 body main.syt-main .syt-service .service-container .card .card-body .card-text {
@@ -686,14 +682,27 @@ body main.syt-main .syt-adventage .adventage-container .adventage-card .adventag
 }
 
 body main.syt-main .syt-adventage .adventage-container .adventage-card .adventage-title {
-  width: 220px;
-  font-size: 24px;
+  width: 290px;
   font-weight: 600;
   color: #FFFFFF;
   background-color: #0c57c9;
   margin: 0px auto 10px;
-  padding: 10px;
+  padding: 15px 0px 10px;
   white-space: nowrap;
+}
+
+@media (max-width: 1399px) {
+  body main.syt-main .syt-adventage .adventage-container .adventage-card .adventage-title {
+    width: 250px;
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 1199px) {
+  body main.syt-main .syt-adventage .adventage-container .adventage-card .adventage-title {
+    width: 220px;
+    font-size: 24px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -701,20 +710,6 @@ body main.syt-main .syt-adventage .adventage-container .adventage-card .adventag
     width: 180px;
     font-size: 20px;
     padding: 5px;
-  }
-}
-
-@media (max-width: 575px) {
-  body main.syt-main .syt-adventage .adventage-container .adventage-card .adventage-title {
-    width: 150px;
-    font-size: 16px;
-  }
-}
-
-@media (max-width: 399px) {
-  body main.syt-main .syt-adventage .adventage-container .adventage-card .adventage-title {
-    width: 140px;
-    font-size: 14px;
   }
 }
 

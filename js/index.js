@@ -121,9 +121,9 @@ var swiper = new Swiper(".mySwiper", {
 function serviceBtn() {
   $(".service-icon-ul").toggleClass("active");
 }
-function phoneBtn(){
-  $(".phone-number").toggleClass("phone-active");
-}
+// function phoneBtn(){
+//   $(".phone-number").toggleClass("phone-active");
+// }
 //vue
 // const vueApp = new Vue({
 //   data() {
