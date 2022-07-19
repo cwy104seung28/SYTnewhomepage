@@ -165,7 +165,6 @@ $(function () {
           alert("資料已送出！");
         },
       });
-      return false;
     });
   });
 });
