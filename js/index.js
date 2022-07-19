@@ -121,9 +121,54 @@ var swiper = new Swiper(".mySwiper", {
 function serviceBtn() {
   $(".service-icon-ul").toggleClass("active");
 }
-function phoneBtn(){
+function phoneBtn() {
   $(".phone-icon").toggleClass("phone-active");
 }
+
+//表單js
+$(function () {
+  $(".submit").on("click", function () {
+    // 姓名
+    var company = $("#company").val() || "未填寫";
+
+    // 性別
+    // var sex = function() {
+    //   var v;
+    //   $('[name="demo_radio"]').each(function() {
+    //     if($(this).prop('checked') === true) v = $(this).val();
+    //   });
+    //   return v;
+    // };
+
+    // 類別
+    var cat = $("#demo_select").val() || "未填寫";
+
+    // 內容
+    var other = $("#other").val() || "未填寫";
+
+    var data = {
+      "entry.227149180": company,
+      // "entry.814146377": name,
+      // "entry.2119336975": phone,
+      // "entry.840078373": email,
+      // "entry.1020410891": other,
+    };
+
+    $("#myForm").submit(function () {
+      $.ajax({
+        type: "POST",
+        url: "https://docs.google.com/forms/u/2/d/e/1FAIpQLSfgsLn2Mm2_s-WH9EWNlTcJrL68RDNtaqK5wujGTWg8-yd9Ew/formResponse",
+        data: data,
+        contentType: "application/json",
+        dataType: "jsonp",
+        complete: function () {
+          alert("資料已送出！");
+        },
+      });
+      return false;
+    });
+  });
+});
 //vue
 // const vueApp = new Vue({
 //   data() {
