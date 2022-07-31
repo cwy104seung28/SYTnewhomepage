@@ -59,26 +59,26 @@
         </div>
     </nav>
     <main class="syt-main" id="vueapp">
-        <section class="syt-banner" id="banner" >
+        <section class="syt-banner" id="banner">
             <div class="container">
-                            <div class="syt-text">
-                <div class="syt-title">想要
-                    &emsp;&emsp;&emsp;&emsp;&emsp;
-                    <br>沒問題！
+                <div class="syt-text">
+                    <div class="syt-title">想要
+                        &emsp;&emsp;&emsp;&emsp;&emsp;
+                        <br>沒問題！
+                    </div>
+                    <div class="syt-content">你許願，我來做！<br>要什麼有什麼！</div>
+                    <a class="more-btn" href="#contact">
+                        <img class="more-img" src="./assets/img/more-icon-black.svg" alt="">
+                        <img class="more-img-hover" src="./assets/img/more-icon-white.svg" alt="">
+                        了解更多
+                    </a>
+                    <a class="wish-btn" href="#contact">
+                        <img class="more-img" src="./assets/img/wish-icon-black.svg" alt="">
+                        <img class="more-img-hover" src="./assets/img/wish-icon-white.svg" alt="">
+                        我要許願
+                    </a>
+                    <div id="fade" class="syt-title" style="text-align:center;"></div>
                 </div>
-                <div class="syt-content">你許願，我來做！<br>要什麼有什麼！</div>
-                <a class="more-btn" href="#contact">
-                    <img class="more-img" src="./assets/img/more-icon-black.svg" alt="">
-                    <img class="more-img-hover" src="./assets/img/more-icon-white.svg" alt="">
-                    了解更多
-                </a>
-                <a class="wish-btn" href="#contact">
-                    <img class="more-img" src="./assets/img/wish-icon-black.svg" alt="">
-                    <img class="more-img-hover" src="./assets/img/wish-icon-white.svg" alt="">
-                    我要許願
-                </a>
-                <div id="fade" class="syt-title" style="text-align:center;"></div>
-            </div>
 
             </div>
             <a class="scroll-down" href="#service-content">
@@ -274,23 +274,23 @@
                         歡迎您線上留言給我們<br>
                         收到您的訊息後，我們會盡快請專人回復您的問題，謝謝您
                     </div>
-                    <form id="myForm" action="https://docs.google.com/forms/u/2/d/e/1FAIpQLSfgsLn2Mm2_s-WH9EWNlTcJrL68RDNtaqK5wujGTWg8-yd9Ew/formResponse">
+                    <form id="myForm">
                         <div class="company">
                             <label for="company"><span style="letter-spacing: 4px;">公司名稱</span></label>
-                            <input type="text" name="entry.227149180" id="company">
+                            <input type="text" id="company">
                         </div>
                         <div class="name">
                             <label for="name"><span class="required">*</span>姓&ensp;&emsp;&ensp;名</label>
-                            <input type="text" name="entry.814146377" id="name">
+                            <input type="text" id="name">
                         </div>
                         <div class="phone">
                             <label for="phone"><span class="required">*</span>聯絡電話</label>
-                            <input type="text" name="entry.2119336975" id="phone">
+                            <input type="text" id="phone">
                         </div>
                         <div class="email">
                             <label for="email"><span class="required">*</span><span
                                     style="letter-spacing: 6px;">Email</span></label>
-                            <input type="text" name="entry.840078373" id="email">
+                            <input type="text" id="email">
                         </div>
                         <div class="service">
                             <label for="service"><span class="required">*</span>感興趣的服務</label>
@@ -299,14 +299,15 @@
                                 for="system">客製化系統</label>
                             <input type="checkbox" name="entry.800721530" value="打造形象網站" id="website"><label
                                 for="website">打造形象網站</label>
-                            <input type="checkbox" name="entry.800721530" value="App設計開發" id="app"><label for="app">App設計開發</label>
+                            <input type="checkbox" name="entry.800721530" value="App設計開發" id="app"><label
+                                for="app">App設計開發</label>
                         </div>
                         <div class="other">
                             <label for="other">其他</label>
-                            <textarea name="entry.1020410891" id="other"></textarea>
+                            <textarea id="other"></textarea>
                         </div>
                         <div class="send">
-                            <input class="submit" type="submit" value="發送訊息">
+                            <input class="submit" type="submit" value="發送訊息" v-on:click="">
                         </div>
 
                     </form>
@@ -423,53 +424,76 @@
 <script src="./assets/js/index.js"></script>
 <script>
     const vueApp = new Vue({
-  data() {
-    return {
-      worksItem: [
-        {
-          workImg: "./assets/img/work-sample.png",
-          workTags: ["營造業", "零售業", "製造業", "一般企業"],
-          workTitle: "物料管理",
-          workContent:"垂直整合物料系統、請購單、採購單、進貨單，將採購流程系統化，一手輕鬆掌握採購進度。",
+        data() {
+            return {
+                worksItem: [
+                    {
+                        workImg: "./assets/img/work-sample.png",
+                        workTags: ["營造業", "零售業", "製造業", "一般企業"],
+                        workTitle: "物料管理",
+                        workContent: "垂直整合物料系統、請購單、採購單、進貨單，將採購流程系統化，一手輕鬆掌握採購進度。",
+                    },
+                    {
+                        workImg: "./img/work-sample.png",
+                        // workTags: ["營造業", "零售業", "製造業", "一般企業"],
+                        workTitle: "物料管理",
+                        workContent: "垂直整合物料系統、請購單、採購單、進貨單，將採購流程系統化，一手輕鬆掌握採購進度。",
+                    },
+                    {
+                        workImg: "./img/work-sample.png",
+                        // workTags: ["營造業", "零售業", "製造業", "一般企業"],
+                        workTitle: "物料管理",
+                        workContent: "垂直整合物料系統、請購單、採購單、進貨單，將採購流程系統化，一手輕鬆掌握採購進度。",
+                    },
+                ],
+            };
         },
-        {
-          workImg: "./img/work-sample.png",
-          // workTags: ["營造業", "零售業", "製造業", "一般企業"],
-          workTitle: "物料管理",
-          workContent:"垂直整合物料系統、請購單、採購單、進貨單，將採購流程系統化，一手輕鬆掌握採購進度。",
+        methods: {
+            serviceBtn() {
+                $(".service-icon-ul").toggleClass("active");
+            },
+            submitBtn(){
+                var company = $("#company").val();
+                var name = $("#name").val();
+                var data = {
+                    'entry.816415827': company,
+                    'entry.684655785': name,
+                    'entry.1569038925': sex(),
+                    'entry.1509045370': cat,
+                    'entry.758411200': msg
+                };
+                $.ajax({
+                    type: 'POST',
+                    url: 'https://docs.google.com/forms/u/0/d/e/1FAIpQLSchWjGlHv1LsDj8RU64FfG2W-oPCmr7pLfYBTlcOVie2YI8Zg/formResponse',
+                    data: data,
+                    contentType: 'application/json',
+                    dataType: 'jsonp',
+                    complete: function () {
+                        alert('資料已送出！');
+                    }
+                });
+            }
         },
-        {
-          workImg: "./img/work-sample.png",
-          // workTags: ["營造業", "零售業", "製造業", "一般企業"],
-          workTitle: "物料管理",
-          workContent:"垂直整合物料系統、請購單、採購單、進貨單，將採購流程系統化，一手輕鬆掌握採購進度。",
-        },
-      ],
-    };
-  },
-  methods: {
-    serviceBtn() {
-      $(".service-icon-ul").toggleClass("active");
-    },
-  },
-  mounted() {
-    var swiper = new Swiper(".mySwiper", {
-      // cssMode: true,
-      centeredSlides: true,
-      spaceBetween: 70,
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      loop: true,
-      clickable: true,
-    });
+        mounted() {
+            //swiper
+            var swiper = new Swiper(".mySwiper", {
+                // cssMode: true,
+                centeredSlides: true,
+                spaceBetween: 70,
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                loop: true,
+                clickable: true,
+            });
 
-},
-}).$mount("#vueapp");
+        },
+    }).$mount("#vueapp");
 </script>
+
 </html>
