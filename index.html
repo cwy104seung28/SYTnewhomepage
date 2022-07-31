@@ -226,10 +226,11 @@
                             </div>
                             <div class="works-info col-12 col-lg-5">
                                 <div class="works-tags">
-                                    <div class="tag" v-for="tag in item">{{workTags}}</div>
-                                    <!-- <div class="tag">零售業</div>
+                                    <!-- <div class="tag" v-for="(tag,index) in item">{{item}}</div> -->
+                                    <div class="tag">營造業</div>
+                                    <div class="tag">零售業</div>
                                     <div class="tag">製造業</div>
-                                    <div class="tag">一般企業</div> -->
+                                    <div class="tag">一般企業</div>
                                 </div>
                                 <h2 class="works-title">
                                     物料模組
@@ -295,11 +296,11 @@
                         <div class="service">
                             <label for="service"><span class="required">*</span>感興趣的服務</label>
                             <br>
-                            <input type="checkbox" name="entry.800721530" value="客製化系統" id="system"><label
+                            <input type="checkbox" name="service-check" value="客製化系統" id="system"><label
                                 for="system">客製化系統</label>
-                            <input type="checkbox" name="entry.800721530" value="打造形象網站" id="website"><label
+                            <input type="checkbox" name="service-check" value="打造形象網站" id="website"><label
                                 for="website">打造形象網站</label>
-                            <input type="checkbox" name="entry.800721530" value="App設計開發" id="app"><label
+                            <input type="checkbox" name="service-check" value="App設計開發" id="app"><label
                                 for="app">App設計開發</label>
                         </div>
                         <div class="other">
@@ -307,7 +308,7 @@
                             <textarea id="other"></textarea>
                         </div>
                         <div class="send">
-                            <input class="submit" type="submit" value="發送訊息" v-on:click="">
+                            <input class="submit" type="submit" value="發送訊息" v-on:click="submitBtn()">
                         </div>
 
                     </form>
@@ -452,15 +453,30 @@
             serviceBtn() {
                 $(".service-icon-ul").toggleClass("active");
             },
-            submitBtn(){
-                var company = $("#company").val();
+            submitBtn() {
+                var company = $("#company").val() || '未填寫';
                 var name = $("#name").val();
+                var phone = $("#phone").val();
+                var email = $("#email").val();
+                var service = function () {
+                    var v;
+                    $('[name="service-check"]').each(function () {
+                        if ($(this).prop('checked') == true) {
+                            v += $(this).val();
+                        }
+                        
+                    });
+                    return v;
+                };
+                var other = $("#other").val();
+
                 var data = {
                     'entry.816415827': company,
                     'entry.684655785': name,
-                    'entry.1569038925': sex(),
-                    'entry.1509045370': cat,
-                    'entry.758411200': msg
+                    'entry.801461580': phone,
+                    'entry.1849454000': email,
+                    'entry.60767207': service,
+                    'entry.624779851': other
                 };
                 $.ajax({
                     type: 'POST',
@@ -492,6 +508,7 @@
                 clickable: true,
             });
 
+            
         },
     }).$mount("#vueapp");
 </script>
