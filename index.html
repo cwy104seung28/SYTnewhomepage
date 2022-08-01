@@ -226,18 +226,18 @@
                             </div>
                             <div class="works-info col-12 col-lg-5">
                                 <div class="works-tags">
-                                    <!-- <div class="tag" v-for="(tag,index) in item">{{item}}</div> -->
-                                    <div class="tag">營造業</div>
+                                    <div class="tag" v-for="(tag,index) in item.workTags">{{tag}}</div>
+                                    <!-- <div class="tag">營造業</div>
                                     <div class="tag">零售業</div>
                                     <div class="tag">製造業</div>
-                                    <div class="tag">一般企業</div>
+                                    <div class="tag">一般企業</div> -->
                                 </div>
                                 <h2 class="works-title">
-                                    物料模組
+                                    {{item.workTitle}}
                                 </h2>
                                 <hr>
                                 <p class="works-content">
-                                    垂直整合物料系統、請購單、採購單、進貨單，將採購流程系統化，一手輕鬆掌握採購進度。
+                                    {{item.workContent}}
                                 </p>
                                 <a href="#" class="works-more-btn">
                                     了解更多
@@ -436,13 +436,13 @@
                     },
                     {
                         workImg: "./img/work-sample.png",
-                        // workTags: ["營造業", "零售業", "製造業", "一般企業"],
+                        workTags: ["營造業", "零售業", "製造業", "一般企業"],
                         workTitle: "物料管理",
                         workContent: "垂直整合物料系統、請購單、採購單、進貨單，將採購流程系統化，一手輕鬆掌握採購進度。",
                     },
                     {
                         workImg: "./img/work-sample.png",
-                        // workTags: ["營造業", "零售業", "製造業", "一般企業"],
+                        workTags: ["營造業", "零售業", "製造業", "一般企業"],
                         workTitle: "物料管理",
                         workContent: "垂直整合物料系統、請購單、採購單、進貨單，將採購流程系統化，一手輕鬆掌握採購進度。",
                     },
