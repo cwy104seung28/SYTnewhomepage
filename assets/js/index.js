@@ -50,17 +50,7 @@
   s.parentNode.insertBefore(tk, s);
 })(document);
 //banner字
-function fadetext() {
-  fade.style.filter = "alpha(opacity=" + x + ", style=0)";
-  x = y < 50 ? x + 4 : x - 4;
-  y += 2;
-  if (y == 100) {
-    z = z >= texts.length - 1 ? 1 : z + 1;
-    y = 0;
-    fade.innerHTML = texts[z];
-  }
-  setTimeout("fadetext();", 50);
-}
+
 
 var texts = new Array(3),
   tcolor = new Array(3),

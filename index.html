@@ -11,7 +11,7 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="./assets/css/index.css?202207311551">
+    <link rel="stylesheet" href="./assets/css/index.css?202208021550">
     <link rel="icon" type="image/png" href="./assets/img/SYTlogotitle.svg">
 
 
@@ -62,7 +62,8 @@
         <section class="syt-banner" id="banner">
             <div class="container">
                 <div class="syt-text">
-                    <div class="syt-title">想要
+                    <div class="syt-title">
+                        想要
                         &emsp;&emsp;&emsp;&emsp;&emsp;
                         <br>沒問題！
                     </div>
@@ -464,7 +465,7 @@
                         if ($(this).prop('checked') == true) {
                             v += $(this).val();
                         }
-                        
+
                     });
                     return v;
                 };
@@ -506,9 +507,21 @@
                 },
                 loop: true,
                 clickable: true,
-            });
-
+            }); 
             
+            function fadetext() {
+                fade.style.filter = "alpha(opacity=" + x + ", style=0)";
+                x = y < 50 ? x + 4 : x - 4;
+                y += 2;
+                if (y == 100) {
+                    z = z >= texts.length - 1 ? 1 : z + 1;
+                    y = 0;
+                    fade.innerHTML = texts[z];
+                }
+                setTimeout("fadetext();", 50);
+            }
+
+
         },
     }).$mount("#vueapp");
 </script>

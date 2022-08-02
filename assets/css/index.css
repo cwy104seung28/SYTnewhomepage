@@ -212,10 +212,6 @@ body main.syt-main .syt-banner {
   }
 }
 
-body main.syt-main .syt-banner .container {
-  position: relative;
-}
-
 body main.syt-main .syt-banner .container .syt-text {
   position: absolute;
   top: 200px;
@@ -1538,24 +1534,6 @@ body main.syt-main .contact-service .service-icon .service-icon-ul .service-icon
   }
   body main.syt-main .contact-service .service-icon .service-icon-ul .service-icon-li .line-icon:hover .line-img-hover {
     display: block;
-  }
-}
-
-@media (max-width: 1199px) {
-  body main.syt-main .contact-service .service-icon .service-icon-ul .service-icon-li .phone-icon {
-    display: none;
-  }
-}
-
-body main.syt-main .contact-service .service-icon .service-icon-ul .service-icon-li .phone-icon-phone {
-  display: none;
-}
-
-@media (max-width: 1199px) {
-  body main.syt-main .contact-service .service-icon .service-icon-ul .service-icon-li .phone-icon-phone {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
   }
 }
 
